@@ -36,6 +36,7 @@ import Trailblazers from "./components/Teams/PortlandTrailblazers";
 import Kings from "./components/Teams/SacramentoKings";
 import Spurs from "./components/Teams/SanAntonioSpurs";
 import Raptors from "./components/Teams/TorontoRaptors";
+import { IoIosArrowDown } from "react-icons/io";
 
 function App() {
   return (
@@ -55,108 +56,127 @@ function App() {
         <div className="dropdown">
           <button className="dropbtn">
             Teams
+            <IoIosArrowDown />
             <i className="fa fa-caret-down" />
           </button>
           <div className="dropdown-content">
-            <NavLink to="/atlanta-hawks" activeClassName="activeNavButton">
-              Atlanta Hawks
-            </NavLink>
-            <NavLink to="/boston-celtics" activeClassName="activeNavButton">
-              Boston Celtics
-            </NavLink>
-            <NavLink to="/brooklyn-nets" activeClassName="activeNavButton">
-              Brooklyn Nets
-            </NavLink>
-            <NavLink to="/charlotte-hornets" activeClassName="activeNavButton">
-              Charlotte Hornets
-            </NavLink>
-            <NavLink to="/chicago-bulls" activeClassName="activeNavButton">
-              Chicago Bulls
-            </NavLink>
-            <NavLink
-              to="/cleveland-cavaliers"
-              activeClassName="activeNavButton"
-            >
-              Cleveland Cavaliers
-            </NavLink>
-            <NavLink to="/dallas-mavericks" activeClassName="activeNavButton">
-              Dallas Mavericks
-            </NavLink>
-            <NavLink to="/denver-nuggets" activeClassName="activeNavButton">
-              Denver Nuggets
-            </NavLink>
-            <NavLink to="/detroit-pistons" activeClassName="activeNavButton">
-              Detroit Pistons
-            </NavLink>
-            <NavLink
-              to="/golden-state-warriors"
-              activeClassName="activeNavButton"
-            >
-              Golden State Warriors
-            </NavLink>
-            <NavLink to="/houston-rockets" activeClassName="activeNavButton">
-              Houston Rockets
-            </NavLink>
-            <NavLink to="/indiana-pacers" activeClassName="activeNavButton">
-              Indiana Pacers
-            </NavLink>{" "}
-            <NavLink to="/la-clippers" activeClassName="activeNavButton">
-              LA Clippers
-            </NavLink>
-            <NavLink to="/la-lakers" activeClassName="activeNavButton">
-              LA Lakers
-            </NavLink>
-            <NavLink to="/memphis-grizzlies" activeClassName="activeNavButton">
-              Memphis Grizzlies
-            </NavLink>
-            <NavLink to="/miami-heat" activeClassName="activeNavButton">
-              Miami Heat
-            </NavLink>
-            <NavLink to="/milwaukee-bucks" activeClassName="activeNavButton">
-              Milwaukee Bucks
-            </NavLink>
-            <NavLink
-              to="/minnesota-timberwolves"
-              activeClassName="activeNavButton"
-            >
-              Minnesota Timberwolves
-            </NavLink>
-            <NavLink
-              to="/new-orleans-pelicans"
-              activeClassName="activeNavButton"
-            >
-              New Orleans Pelicans{" "}
-            </NavLink>
-            <NavLink to="/new-york-knicks" activeClassName="activeNavButton">
-              New York Knicks
-            </NavLink>
-            <NavLink to="/okc-thunder" activeClassName="activeNavButton">
-              OKC Thunder
-            </NavLink>
-            <NavLink to="/orlando-magic" activeClassName="activeNavButton">
-              Orlando Magic
-            </NavLink>
-            <NavLink to="/philadelphia-76ers" activeClassName="activeNavButton">
-              Philadelphia 76'ers
-            </NavLink>
-            <NavLink to="/phoenix-suns" activeClassName="activeNavButton">
-              Phoenix Suns
-            </NavLink>
-            <NavLink
-              to="/portland-trailblazers"
-              activeClassName="activeNavButton"
-            >
-              Portland Trailblazers
-            </NavLink>
-            <NavLink to="/sacramento-kings" activeClassName="activeNavButton">
-              Sacramento Kings{" "}
-            </NavLink>
-            <NavLink to="/san-antonio-spurs" activeClassName="activeNavButton">
-              San Antonio Spurs{" "}
-            </NavLink>
-            <NavLink to="/toronto-raptors" activeClassName="activeNavButton">
-              Toronto Raptors{" "}
-            </NavLink>
+            <div className="conference">
+              <h3 className="west-conference-header">West</h3>
+              <NavLink to="/dallas-mavericks" activeClassName="activeNavButton">
+                Dallas Mavericks
+              </NavLink>
+              <NavLink to="/denver-nuggets" activeClassName="activeNavButton">
+                Denver Nuggets
+              </NavLink>
+              <NavLink
+                to="/golden-state-warriors"
+                activeClassName="activeNavButton"
+              >
+                Golden State Warriors
+              </NavLink>
+              <NavLink to="/houston-rockets" activeClassName="activeNavButton">
+                Houston Rockets
+              </NavLink>
+              <NavLink to="/la-clippers" activeClassName="activeNavButton">
+                LA Clippers
+              </NavLink>
+              <NavLink to="/la-lakers" activeClassName="activeNavButton">
+                LA Lakers
+              </NavLink>
+              <NavLink
+                to="/memphis-grizzlies"
+                activeClassName="activeNavButton"
+              >
+                Memphis Grizzlies
+              </NavLink>
+              <NavLink
+                to="/minnesota-timberwolves"
+                activeClassName="activeNavButton"
+              >
+                Minnesota Timberwolves
+              </NavLink>
+              <NavLink
+                to="/new-orleans-pelicans"
+                activeClassName="activeNavButton"
+              >
+                New Orleans Pelicans{" "}
+              </NavLink>
+              <NavLink to="/okc-thunder" activeClassName="activeNavButton">
+                OKC Thunder
+              </NavLink>
+              <NavLink to="/phoenix-suns" activeClassName="activeNavButton">
+                Phoenix Suns
+              </NavLink>
+              <NavLink
+                to="/portland-trailblazers"
+                activeClassName="activeNavButton"
+              >
+                Portland Trailblazers
+              </NavLink>
+              <NavLink to="/sacramento-kings" activeClassName="activeNavButton">
+                Sacramento Kings{" "}
+              </NavLink>
+              <NavLink
+                to="/san-antonio-spurs"
+                activeClassName="activeNavButton"
+              >
+                San Antonio Spurs{" "}
+              </NavLink>
+            </div>
+            <div className="conference">
+              <h3 className="east-conference-header">East</h3>
+              <NavLink to="/atlanta-hawks" activeClassName="activeNavButton">
+                Atlanta Hawks
+              </NavLink>
+              <NavLink to="/boston-celtics" activeClassName="activeNavButton">
+                Boston Celtics
+              </NavLink>
+              <NavLink to="/brooklyn-nets" activeClassName="activeNavButton">
+                Brooklyn Nets
+              </NavLink>
+              <NavLink
+                to="/charlotte-hornets"
+                activeClassName="activeNavButton"
+              >
+                Charlotte Hornets
+              </NavLink>
+              <NavLink to="/chicago-bulls" activeClassName="activeNavButton">
+                Chicago Bulls
+              </NavLink>
+              <NavLink
+                to="/cleveland-cavaliers"
+                activeClassName="activeNavButton"
+              >
+                Cleveland Cavaliers
+              </NavLink>
+              <NavLink to="/detroit-pistons" activeClassName="activeNavButton">
+                Detroit Pistons
+              </NavLink>
+              <NavLink to="/indiana-pacers" activeClassName="activeNavButton">
+                Indiana Pacers
+              </NavLink>{" "}
+              <NavLink to="/miami-heat" activeClassName="activeNavButton">
+                Miami Heat
+              </NavLink>
+              <NavLink to="/milwaukee-bucks" activeClassName="activeNavButton">
+                Milwaukee Bucks
+              </NavLink>
+              <NavLink to="/new-york-knicks" activeClassName="activeNavButton">
+                New York Knicks
+              </NavLink>
+              <NavLink to="/orlando-magic" activeClassName="activeNavButton">
+                Orlando Magic
+              </NavLink>
+              <NavLink
+                to="/philadelphia-76ers"
+                activeClassName="activeNavButton"
+              >
+                Philadelphia 76'ers
+              </NavLink>
+              <NavLink to="/toronto-raptors" activeClassName="activeNavButton">
+                Toronto Raptors{" "}
+              </NavLink>
+            </div>
           </div>
         </div>
         <NavLink to="/betting" activeClassName="activeNavButton">

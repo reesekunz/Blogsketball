@@ -1,64 +1,85 @@
 .App {
-  text-align: center;
-}
+  // text-align: center;
 
-/* NAV LINK DROPDOWN  */
-.links-container {
-  border: 1px solid blue;
-  display: flex;
-  justify-content: space-evenly;
-  /* The dropdown container */
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
+  /* NAV LINK DROPDOWN  */
+  .links-container {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-evenly;
+    /* The dropdown container */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
 
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 1.1rem;
-    border: none;
-    outline: none;
-    color: black;
-    padding: 22px 22px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
+    /* Dropdown button */
+    .dropdown .dropbtn {
+      font-size: 1.1rem;
+      border: none;
+      outline: none;
+      color: black;
+      padding: 22px 22px;
+      background-color: inherit;
+      font-family: inherit; /* Important for vertical align on mobile phones */
+      margin: 0; /* Important for vertical align on mobile phones */
+    }
 
-  /* Add color to navbar links on hover */
-  .nav-bar a:hover,
-  .dropdown:hover .dropbtn {
-    background-color: black;
-    color: white;
-  }
+    /* Add color to navbar links on hover */
+    .nav-bar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: black;
+      color: white;
+    }
 
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    z-index: 1;
-    /* border: 3px solid gray; */
-  }
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      z-index: 1;
 
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
+      .west-conference-header {
+        color: white;
+        background-color: red;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+      }
+      .east-conference-header {
+        background-color: blue;
+        color: white;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+      }
+    }
 
-  /* Add background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: indianred;
-  }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
 
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
+    /* Add background color to dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: black;
+      color: white;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: flex;
+      flex-direction: row;
+      width: 400px;
+      border: 2px solid black;
+      height: 660px;
+      background-color: #f9f9f9;
+      box-shadow: 1px 2px black;
+    }
   }
 }
