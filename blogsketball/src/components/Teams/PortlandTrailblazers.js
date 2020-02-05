@@ -1,6 +1,8 @@
 import React from "react";
 import "./teams.scss";
 import TrailBlazersLogo from "../../images/TrailBlazers.jpeg";
+import { IoIosList, IoIosBrowsers } from "react-icons/io";
+import Layout from "../../helpers/Layout";
 
 function Trailblazers() {
   return (
@@ -15,9 +17,12 @@ function Trailblazers() {
           />
         </div>
       </div>
-      {/* Filter */}
-      Filter by article type, date-posted, etc. dropdown here Link to players
-      component
+      <button onClick={Layout.ListLayout}>
+        <IoIosList size={40} />
+      </button>
+      <button onClick={Layout.CardLayout}>
+        <IoIosBrowsers size={40} />
+      </button>
       <div className="article-container">
         {/* Row 1  */}
         <div className="article-row">
@@ -27,9 +32,12 @@ function Trailblazers() {
               alt="TrailBlazers logo"
               className="article-img"
             />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
+            <div className="article-header-wordz">
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+              <p>Article caption: blah blah blah blah</p>
+            </div>
           </div>
           <div className="article-card">
             <img
@@ -37,9 +45,12 @@ function Trailblazers() {
               alt="TrailBlazers logo"
               className="article-img"
             />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
+            <div className="article-header-wordz">
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+              <p>Article caption: blah blah blah blah</p>
+            </div>
           </div>
           <div className="article-card">
             <img
@@ -47,9 +58,12 @@ function Trailblazers() {
               alt="TrailBlazers logo"
               className="article-img"
             />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
+            <div className="article-header-wordz">
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+              <p>Article caption: blah blah blah blah</p>
+            </div>
           </div>
         </div>
         {/* Row 2 */}
@@ -60,10 +74,12 @@ function Trailblazers() {
               alt="TrailBlazers logo"
               className="article-img"
             />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-            <p>Article caption: blah blah blah blah</p>
+            <div className="article-header-wordz">
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+              <p>Article caption: blah blah blah blah</p>
+            </div>
           </div>
           <div className="article-card">
             <img
@@ -71,10 +87,12 @@ function Trailblazers() {
               alt="TrailBlazers logo"
               className="article-img"
             />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-            <p>Article caption: blah blah blah blah</p>
+            <div className="article-header-wordz">
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+              <p>Article caption: blah blah blah blah</p>
+            </div>
           </div>
           <div className="article-card">
             <img
@@ -82,10 +100,12 @@ function Trailblazers() {
               alt="TrailBlazers logo"
               className="article-img"
             />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-            <p>Article caption: blah blah blah blah</p>
+            <div className="article-header-wordz">
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+              <p>Article caption: blah blah blah blah</p>
+            </div>
           </div>
         </div>
         {/* Row 3 */}
@@ -96,10 +116,12 @@ function Trailblazers() {
               alt="TrailBlazers logo"
               className="article-img"
             />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-            <p>Article caption: blah blah blah blah</p>
+            <div className="article-header-wordz">
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+              <p>Article caption: blah blah blah blah</p>
+            </div>
           </div>
           <div className="article-card">
             <img
@@ -107,10 +129,12 @@ function Trailblazers() {
               alt="TrailBlazers logo"
               className="article-img"
             />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-            <p>Article caption: blah blah blah blah</p>
+            <div className="article-header-wordz">
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+              <p>Article caption: blah blah blah blah</p>
+            </div>
           </div>
           <div className="article-card">
             <img
@@ -118,10 +142,12 @@ function Trailblazers() {
               alt="TrailBlazers logo"
               className="article-img"
             />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-            <p>Article caption: blah blah blah blah</p>
+            <div className="article-header-wordz">
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+              <p>Article caption: blah blah blah blah</p>
+            </div>
           </div>
         </div>
       </div>
