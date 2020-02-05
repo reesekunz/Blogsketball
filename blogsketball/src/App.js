@@ -36,6 +36,8 @@ import Trailblazers from "./components/Teams/PortlandTrailblazers";
 import Kings from "./components/Teams/SacramentoKings";
 import Spurs from "./components/Teams/SanAntonioSpurs";
 import Raptors from "./components/Teams/TorontoRaptors";
+import Jazz from "./components/Teams/UtahJazz";
+import Wizards from "./components/Teams/WashingtonWizards";
 import { IoIosArrowDown } from "react-icons/io";
 
 function App() {
@@ -48,16 +50,14 @@ function App() {
           exact
           to="/"
           activeClassName="activeNavButton"
-          className="footer-link"
+          className="nav-bar-link"
         >
           Home
         </NavLink>
         {/* Dropdown for Teams  */}
         <div className="dropdown">
           <button className="dropbtn">
-            Teams
-            <IoIosArrowDown />
-            <i className="fa fa-caret-down" />
+            Teams <IoIosArrowDown />
           </button>
           <div className="dropdown-content">
             <div className="conference">
@@ -108,10 +108,10 @@ function App() {
                 Phoenix Suns
               </NavLink>
               <NavLink
-                to="/portland-trailblazers"
+                to="/portland-trail-blazers"
                 activeClassName="activeNavButton"
               >
-                Portland Trailblazers
+                Portland Trail Blazers
               </NavLink>
               <NavLink to="/sacramento-kings" activeClassName="activeNavButton">
                 Sacramento Kings{" "}
@@ -121,6 +121,9 @@ function App() {
                 activeClassName="activeNavButton"
               >
                 San Antonio Spurs{" "}
+              </NavLink>
+              <NavLink to="/utah-jazz" activeClassName="activeNavButton">
+                Utah Jazz
               </NavLink>
             </div>
             <div className="conference">
@@ -176,20 +179,42 @@ function App() {
               <NavLink to="/toronto-raptors" activeClassName="activeNavButton">
                 Toronto Raptors{" "}
               </NavLink>
+              <NavLink
+                to="/washington-wizards"
+                activeClassName="activeNavButton"
+              >
+                Washington Wizards
+              </NavLink>
             </div>
           </div>
         </div>
-        <NavLink to="/betting" activeClassName="activeNavButton">
-          Betting
-        </NavLink>
-        <NavLink to="/power-rankings" activeClassName="activeNavButton">
-          Power Rankings
-        </NavLink>
-        <NavLink to="/game-analysis" activeClassName="activeNavButton">
+        <NavLink
+          to="/game-analysis"
+          activeClassName="activeNavButton"
+          className="nav-bar-link"
+        >
           Game Analysis
         </NavLink>
-        <NavLink to="/rumors" activeClassName="activeNavButton">
+        <NavLink
+          to="/rumors"
+          activeClassName="activeNavButton"
+          className="nav-bar-link"
+        >
           Rumors
+        </NavLink>
+        <NavLink
+          to="/betting"
+          activeClassName="activeNavButton"
+          className="nav-bar-link"
+        >
+          Betting
+        </NavLink>
+        <NavLink
+          to="/power-rankings"
+          activeClassName="activeNavButton"
+          className="nav-bar-link"
+        >
+          Power Rankings
         </NavLink>
       </div>
       {/* Routes  */}
@@ -223,10 +248,12 @@ function App() {
       <Route path="/orlando-magic" component={Magic} />
       <Route path="/philadelphia-76ers" component={Sixers} />
       <Route path="/phoenix-suns" component={Suns} />
-      <Route path="/portland-trailblazers" component={Trailblazers} />
+      <Route path="/portland-trail-blazers" component={Trailblazers} />
       <Route path="/sacramento-kings" component={Kings} />
       <Route path="/san-antonio-spurs" component={Spurs} />
       <Route path="/toronto-raptors" component={Raptors} />
+      <Route path="/utah-jazz" component={Jazz} />
+      <Route path="/washington-wizards" component={Wizards} />
     </div>
   );
 }

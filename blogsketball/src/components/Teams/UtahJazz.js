@@ -1,18 +1,18 @@
 import React from "react";
 import "./teams.scss";
-import SpursLogo from "../../images/Spurs.png";
+import JazzLogo from "../../images/Jazz.png";
 
-function Spurs() {
+function Jazz() {
   return (
     <div className="team-container">
       <div className="team-header">
-        <h3 className="team-name">San Antonio Spurs</h3>
+        <h3 className="team-name">Utah Jazz</h3>
         <div className="logo-container">
-          <img src={SpursLogo} alt="Spurs logo" className="team-logo" />
+          <img src={JazzLogo} alt="Jazz logo" className="team-logo" />
         </div>
       </div>
     </div>
   );
 }
 
-export default Spurs;
+export default Jazz;
