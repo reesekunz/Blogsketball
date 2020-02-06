@@ -7,6 +7,8 @@ import Betting from "./components/Betting/Betting";
 import PowerRankings from "./components/Power Rankings/PowerRankings";
 import GameAnalysis from "./components/Game Analysis/GameAnalysis";
 import Rumors from "./components/Rumors/Rumors";
+import NBADraft from "./components/NBADraft/NBADraft";
+import College from "./components/College/College";
 // Teams
 import Hawks from "./components/Teams/AtlantaHawks";
 import Celtics from "./components/Teams/BostonCeltics";
@@ -209,13 +211,26 @@ function App() {
         >
           Betting
         </NavLink>
-        <NavLink
-          to="/power-rankings"
-          activeClassName="activeNavButton"
-          className="nav-bar-link"
-        >
-          Power Rankings
-        </NavLink>
+
+        {/* Dropdown for Other  */}
+        <div className="dropdown">
+          <button className="dropbtn">
+            More <IoIosArrowDown />
+          </button>
+          <div className="dropdown-content-other">
+            <div className="conference">
+              <NavLink to="/power-rankings" activeClassName="activeNavButton">
+                Power Rankings
+              </NavLink>
+              <NavLink to="/mens-ncaa" activeClassName="activeNavButton">
+                Men's NCAA
+              </NavLink>
+              <NavLink to="/nba-mock-draft" activeClassName="activeNavButton">
+                NBA Mock Draft
+              </NavLink>
+            </div>
+          </div>
+        </div>
       </div>
       {/* Routes  */}
       <Route exact path="/" component={Home} />
@@ -223,6 +238,8 @@ function App() {
       <Route path="/power-rankings" component={PowerRankings} />
       <Route path="/game-analysis" component={GameAnalysis} />
       <Route path="/rumors" component={Rumors} />
+      <Route path="/mens-ncaa" component={College} />
+      <Route path="/nba-mock-draft" component={NBADraft} />
 
       <Route path="/atlanta-hawks" component={Hawks} />
       <Route path="/boston-celtics" component={Celtics} />

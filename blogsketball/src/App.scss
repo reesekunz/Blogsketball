@@ -20,6 +20,7 @@
     }
 
     /* NAV LINK DROPDOWN  */
+    // DROPDOWN FOR TEAMS
     /* The dropdown container */
     .dropdown {
       float: left;
@@ -108,5 +109,46 @@
       background-color: #f9f9f9;
       box-shadow: 1px 2px black;
     }
+  }
+
+  // DROPDOWN FOR OTHER
+  /* Dropdown content (hidden by default) */
+  .dropdown-content-other {
+    display: none;
+    position: absolute;
+    background-color: white;
+    // min-width: 40px;
+    z-index: 1;
+    border: 2px solid gold;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content-other a {
+    float: none;
+    color: black;
+
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 130px;
+    border-top: 1px solid gray;
+  }
+
+  /* Add background color to dropdown links on hover */
+  .dropdown-content-other a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content-other {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    border: 2px solid black;
+    height: 130px;
+    background-color: #f9f9f9;
+    box-shadow: 1px 2px black;
   }
 }
