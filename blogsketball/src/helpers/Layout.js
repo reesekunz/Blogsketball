@@ -25,7 +25,7 @@ function ListLayout() {
   }
   var headerWordz = document.querySelectorAll(".article-header-wordz");
   for (var i = 0; i < headerWordz.length; i += 1) {
-    headerWordz[i].style.marginLeft = "20%";
+    headerWordz[i].style.marginLeft = "18%";
     headerWordz[i].style.position = "absolute";
     headerWordz[i].style.display = "flex";
     headerWordz[i].style.flexDirection = "column";
@@ -52,7 +52,7 @@ function CardLayout() {
     cardArticleCards[i].style.border = "1px solid black";
     cardArticleCards[i].style.width = "425px";
     cardArticleCards[i].style.height = "280px";
-    cardArticleCards[i].style.boxShadow = "2px 4px black";
+    cardArticleCards[i].style.boxShadow = "1px 2px black";
     cardArticleCards[i].style.display = "flex";
     cardArticleCards[i].style.flexDirection = "column";
   }

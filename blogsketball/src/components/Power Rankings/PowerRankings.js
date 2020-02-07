@@ -26,7 +26,12 @@ function PowerRankings() {
           and where to rank them.
         </p>
       </div>
-      <h2 className="previous-rank-header">Previous Rankings:</h2>
+      <div className="risers-and-fallers">
+        <h2 className="previous-rank-header">Who's Hot and Who's Not</h2>
+        <p>Biggest risers and fallers from the previous Power Rankings. </p>
+      </div>
+      {/* WILL USE THIS AT START OF NEXT SEASON */}
+      {/* <h2 className="previous-rank-header">Previous Rankings:</h2>
       <div className="week-links">
         <a className="week-link" href="#">
           Week 15
@@ -87,7 +92,7 @@ function PowerRankings() {
         <a className="week-link" href="#">
           1
         </a>
-      </div>
+      </div> */}
       <div className="whos-hot-whos-not-container">
         <div className="whos-hot-whos-not">
           <div className="hot-cold-team">

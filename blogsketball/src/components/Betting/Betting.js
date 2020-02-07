@@ -17,6 +17,7 @@ function Betting() {
       </div>
       <div className="ag-grid-container">
         <h2 className="history">History</h2>
+
         <div className="ag-grid">
           <AGGrid />
         </div>

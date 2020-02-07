@@ -36,8 +36,8 @@ class AGGrid extends Component {
         {
           date: "02/06/20",
           matchup: "Pelicans -5 @ Bulls",
-          result: "TBD",
-          record: "TBD"
+          result: "Win",
+          record: "1-1"
         },
         {
           date: "02/05/20",
