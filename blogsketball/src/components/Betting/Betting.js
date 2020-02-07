@@ -10,7 +10,9 @@ function Betting() {
           <h1>Pick of the Day:</h1>
           <div className="light"></div>
           <div className="light"></div>
-          <p className="pick-selection">Phoenix Suns -3 @ Detroit Pistons</p>
+          <p className="pick-selection">
+            New Orleans Pelicans -5 @ Chicago Bulls
+          </p>
         </div>
       </div>
       <div className="ag-grid-container">

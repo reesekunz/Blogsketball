@@ -5,8 +5,7 @@ import { Route, NavLink } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Betting from "./components/Betting/Betting";
 import PowerRankings from "./components/Power Rankings/PowerRankings";
-import GameAnalysis from "./components/Game Analysis/GameAnalysis";
-import Rumors from "./components/Rumors/Rumors";
+import Analysis from "./components/NewsAndAnalysis/NewsAndAnalysis";
 import NBADraft from "./components/NBADraft/NBADraft";
 import College from "./components/College/College";
 // Teams
@@ -191,19 +190,13 @@ function App() {
           </div>
         </div>
         <NavLink
-          to="/game-analysis"
+          to="/news-and-analysis"
           activeClassName="activeNavButton"
           className="nav-bar-link"
         >
-          Game Analysis
+          News + Analysis
         </NavLink>
-        <NavLink
-          to="/rumors"
-          activeClassName="activeNavButton"
-          className="nav-bar-link"
-        >
-          Rumors
-        </NavLink>
+
         <NavLink
           to="/betting"
           activeClassName="activeNavButton"
@@ -211,7 +204,13 @@ function App() {
         >
           Betting
         </NavLink>
-
+        <NavLink
+          to="/mens-ncaa"
+          activeClassName="activeNavButton"
+          className="nav-bar-link"
+        >
+          NCAA
+        </NavLink>
         {/* Dropdown for Other  */}
         <div className="dropdown">
           <button className="dropbtn">
@@ -222,9 +221,7 @@ function App() {
               <NavLink to="/power-rankings" activeClassName="activeNavButton">
                 Power Rankings
               </NavLink>
-              <NavLink to="/mens-ncaa" activeClassName="activeNavButton">
-                Men's NCAA
-              </NavLink>
+
               <NavLink to="/nba-mock-draft" activeClassName="activeNavButton">
                 NBA Mock Draft
               </NavLink>
@@ -236,8 +233,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route path="/betting" component={Betting} />
       <Route path="/power-rankings" component={PowerRankings} />
-      <Route path="/game-analysis" component={GameAnalysis} />
-      <Route path="/rumors" component={Rumors} />
+      <Route path="/news-and-analysis" component={Analysis} />
       <Route path="/mens-ncaa" component={College} />
       <Route path="/nba-mock-draft" component={NBADraft} />
 

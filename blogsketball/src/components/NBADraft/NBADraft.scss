@@ -1,0 +1,23 @@
+.nba-draft-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 100px;
+  .nba-draft-header {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+  .last-updated {
+    // display: flex;
+    // justify-content: flex-end;
+    margin-left: 10%;
+  }
+  .round-table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

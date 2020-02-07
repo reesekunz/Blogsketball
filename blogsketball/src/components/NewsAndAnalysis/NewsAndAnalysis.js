@@ -1,5 +1,5 @@
 import React from "react";
-import "./GameAnalysis.scss";
+import "./NewsAndAnalysis.scss";
 
 function GameAnalysis() {
   return <div>This is the game analysis page.</div>;
