@@ -2,22 +2,29 @@ import React from "react";
 import "./Home.scss";
 import BlogsketballIMG from "../../images/Blogsketball.png";
 import { IoLogoInstagram, IoLogoFacebook, IoLogoTwitter } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 
 function Home() {
   return (
     <div className="home-container">
       <div className="top-section">
-        <div className="main-img-container">
-          <img
-            src={BlogsketballIMG}
-            alt="main-article"
-            className="main-article-img"
-          />
-          <h3 className="main-article-header">
-            Main Article Header: Blah Blah Blah Blah
-            <div className="article-tag">Mavericks</div>
-          </h3>
-        </div>
+        <NavLink
+          to="/legit-contenders"
+          activeClassName="activeNavButton"
+          className="article-link"
+        >
+          <div className="main-img-container">
+            <img
+              src={BlogsketballIMG}
+              alt="main-article"
+              className="main-article-img"
+            />
+            <h3 className="main-article-header">
+              Who Are Legitimate Title Contenders? Post Trade-Deadline Edition
+            <div className="article-tag">Trades</div>
+            </h3>
+          </div>
+        </NavLink>
       </div>
       <h3 className="header">Latest</h3>
       <div className="second-section">

@@ -28,21 +28,27 @@ class AGGrid extends Component {
       ],
       rowData: [
         {
-          date: "02/07/20",
+          date: "02/08/20",
           matchup: "TBD",
           result: "TBD",
           record: "TBD"
         },
         {
+          date: "02/07/20",
+          matchup: "Sixers -5.5 vs Grizzlies",
+          result: "W",
+          record: "2-1"
+        },
+        {
           date: "02/06/20",
           matchup: "Pelicans -5 @ Bulls",
-          result: "Win",
+          result: "W",
           record: "1-1"
         },
         {
           date: "02/05/20",
           matchup: "Suns -3 @ Pistons",
-          result: "Loss",
+          result: "L",
           record: "0-1"
         }
       ]

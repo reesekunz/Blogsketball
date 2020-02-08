@@ -99,11 +99,22 @@ function NewsAndAnalysis() {
     <div className="news-and-analysis-container">
       <h2 className="news-and-analysis-header">News and Analysis</h2>
       <div className="tab-buttonz">
-        <button onClick={ViewALLArticles}>View All</button>
-        <button onClick={ViewGameArticles}>Games</button>
-        <button onClick={ViewTradeArticles}>Trades</button>
-        <button onClick={ViewFAArticles}> Free Agency</button>
-        <button onClick={ViewOtherArticles}>Other</button>
+        <div className="article-filter-btn" onClick={ViewALLArticles}>
+          View All
+        </div>
+        <div className="article-filter-btn" onClick={ViewGameArticles}>
+          Games
+        </div>
+        <div className="article-filter-btn" onClick={ViewTradeArticles}>
+          Trades
+        </div>
+        <div className="article-filter-btn" onClick={ViewFAArticles}>
+          {" "}
+          Free Agency
+        </div>
+        <div className="article-filter-btn" onClick={ViewOtherArticles}>
+          Other
+        </div>
       </div>
       <div className="all-articles-container">
         <div className="article-card" id="game">

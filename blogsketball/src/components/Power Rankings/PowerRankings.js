@@ -6,7 +6,7 @@ import { IoMdSnow, IoIosFlame } from "react-icons/io";
 function PowerRankings() {
   return (
     <div className="power-rankings-container">
-      <h2 className="week-header">Week 16 Power Rankings</h2>
+      <h2 className="week-header">NBA Power Rankings</h2>
 
       <div className="power-rankings-intro">
         <p>
