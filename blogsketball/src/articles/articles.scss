@@ -9,20 +9,30 @@
     margin-top: 50px;
     margin-bottom: 70px;
   }
+
   .article-header-img-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     // margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     .article-header-img {
       width: 700px;
       height: 300px;
     }
     .article-caption {
       font-size: 12px;
+      margin-bottom: 0;
     }
+  }
+  .date-written {
+    margin-top: 0;
+    margin-bottom: 100px;
+    font-style: italic;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .article-content {

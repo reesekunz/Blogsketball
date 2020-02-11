@@ -3,6 +3,7 @@ import "./Home.scss";
 import BlogsketballIMG from "../../images/Blogsketball.png";
 import { IoLogoInstagram, IoLogoFacebook, IoLogoTwitter } from "react-icons/io";
 import { NavLink } from "react-router-dom";
+import KobeChampionship from "../../images/KobeChampionship.jpeg";
 
 function Home() {
   return (
@@ -11,17 +12,19 @@ function Home() {
         <NavLink
           to="/legit-contenders"
           activeClassName="activeNavButton"
-          className="article-link"
+          className="home-article-link"
         >
           <div className="main-img-container">
             <img
-              src={BlogsketballIMG}
-              alt="main-article"
+              src={KobeChampionship}
+              alt="kobe championship"
               className="main-article-img"
             />
-            <h3 className="main-article-header">
+            <h3 className="home-main-article-header">
               Who Are Legitimate Title Contenders? Post Trade-Deadline Edition
-            <div className="article-tag">Trades</div>
+              <div className="article-tag">
+                Tags: Trades, Lakers, Bucks, Clippers, Rockets, 76ers
+              </div>
             </h3>
           </div>
         </NavLink>

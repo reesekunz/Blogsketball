@@ -16,6 +16,7 @@ function LegitContenders() {
           FiveThirtyEights projections based off their RAPTOR model
         </div>
       </div>
+      <div className="date-written">February 8th, 2020</div>
       <div className="article-content">
         <p>
           With the trade deadline finally behind us, we can finally stop playing
@@ -87,13 +88,13 @@ function LegitContenders() {
           Shot", "You're Saying There's a Chance", "Decent Shot", "Great Shot"
         </p>
         <h4>No Shot</h4>
-        <h5>- Toronto Raptors</h5>
-        <h5>- Indiana Pacers</h5>
-        <h5>- Brooklyn Nets</h5>
-        <h5>- Orlando Magic</h5>
-        <h5>- Oklahoma City Thunder</h5>
-        <h5>- Dallas Mavericks</h5>
-        <h5>- Memphis Grizzlies</h5>
+        <h5>Toronto Raptors</h5>
+        <h5>Indiana Pacers</h5>
+        <h5>Brooklyn Nets</h5>
+        <h5>Orlando Magic</h5>
+        <h5>Oklahoma City Thunder</h5>
+        <h5>Dallas Mavericks</h5>
+        <h5>Memphis Grizzlies</h5>
         <h4>You're Saying There's a Chance</h4>
         <h5>Boston Celtics</h5>
         <p>
@@ -104,10 +105,10 @@ function LegitContenders() {
         </p>
         <h5>Miami Heat</h5>
         <p>
-          Miami's addition of Andre Iguodala should help an already loaded
-          roster in terms of depth. My only concern with them is that they are
-          too young and not top-heavy enough to take down some of the stronger
-          teams in the playoffs.
+          Miami's addition of Andre Iguodala and Jae Crowder should help an
+          already loaded roster in terms of depth. My only concern with them is
+          that they are too young and not top-heavy enough to take down some of
+          the stronger teams in the playoffs.
         </p>
         <h5>Denver Nuggets</h5>
         <p>
@@ -140,7 +141,7 @@ function LegitContenders() {
         <h5>Philadelphia 76ers</h5>
         <p>
           The 76ers have been a disappointment so for this season. I really
-          thought the East would be 1a 1b with them and the Bucks, but that
+          thought the East would be 1a and 1b with them and the Bucks, but that
           definitely hasn't been the case this season. Their floor spacing seems
           all out of whack with Simmons, Horford, and Embiid all on the floor at
           the same time. But, still, I can't deny the talent in the starting
@@ -155,12 +156,12 @@ function LegitContenders() {
           they have the best shot to do so, too. Darren Collison is reportedly
           meeting with the Lakers and Clippers later this week and if he takes
           up the minutes Rondo is playing, I don't see any weak points with this
-          team. LeBron has done a lot more with much less.{" "}
+          team. LeBron has won before with a lot less.{" "}
         </p>
         <h5>Los Angeles Clippers</h5>
         <p>
           While I think the Lakers have the best chance to win, I still think
-          that the Clippers overall rosteris better than the Lakers. Marcus
+          that the Clippers overall roster is better than the Lakers. Marcus
           Morris was a huge get for them, especially since they got better while
           the Lakers and Bucks stayed the same. The only thing I'm worried about
           with the Clippers is their size. Montrezl Harrell is 6-8, and I really
@@ -172,12 +173,12 @@ function LegitContenders() {
           The Bucks might just be the historically best team that we have talked
           about the least for as long as I can remember. At 44-7, they are on
           pace to win 71 games and have a point-differential of +12.4 points per
-          game. If they finished with that rate it would be the highest in NBA
-          history... The Bucks are great, they're just young and unproven from a
-          playoff perspective. Giannis is only 25 years old and has never been
-          to a NBA Finals. Until I see the Bucks perform in the playoffs as well
-          as they do in the regular season, I don't know if I can confidently
-          pick them to win the NBA Finals.
+          game. If they finished with that rate, it would be the highest in NBA
+          history... The Bucks are great, they're just unproven from a playoff
+          perspective. Giannis is only 25 years old and has never been to a NBA
+          Finals. Until I see the Bucks perform in the playoffs as well as they
+          do in the regular season, I don't know if I can confidently pick them
+          as the favorite win the NBA Finals.
         </p>
       </div>
     </div>

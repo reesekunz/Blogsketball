@@ -2,6 +2,7 @@ import React from "react";
 import "./NewsAndAnalysis.scss";
 import { NavLink } from "react-router-dom";
 import BlogsketballIMG from "../../images/Blogsketball.png";
+import KobeChampionship from "../../images/KobeChampionship.jpeg";
 
 function ViewGameArticles() {
   var gameArticles = document.querySelectorAll("#game");
@@ -120,9 +121,33 @@ function NewsAndAnalysis() {
         <div className="article-card" id="game">
           game Article card
         </div>
+
         <div className="article-card" id="trades">
-          trades Article card
+          <NavLink
+            to="/legit-contenders"
+            activeClassName="activeNavButton"
+            className="news-article-link"
+          >
+            <h3 className="article-card-header">
+              {" "}
+              Who Are Legitimate Title Contenders? Post Trade-Deadline Edition
+            </h3>
+            <div className="article-card-row-2">
+              <img
+                src={KobeChampionship}
+                alt="kobe championship"
+                className="article-card-img"
+              />{" "}
+              <div className="row2-content">
+                <div className="date-written">Feb. 8th, 2020</div>
+                <div className="tag">
+                  Tags: Trades, Lakers, Bucks, Clippers, Rockets, 76ers
+                </div>
+              </div>
+            </div>
+          </NavLink>
         </div>
+
         <div className="article-card" id="free-agency">
           FA Article card
         </div>

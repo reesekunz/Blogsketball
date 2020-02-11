@@ -3,6 +3,8 @@ import "./teams.scss";
 import LakersLogo from "../../images/Lakers.png";
 import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
+import KobeChampionship from "../../images/KobeChampionship.jpeg";
+import { NavLink } from "react-router-dom";
 
 function Lakers() {
   return (
@@ -13,101 +15,110 @@ function Lakers() {
           <img src={LakersLogo} alt="Lakers logo" className="team-logo" />
         </div>
       </div>
-      <button onClick={Layout.ListLayout}>
-        <IoIosList size={40} />
+      <button onClick={Layout.PageReload}>
+        <IoIosList size={35} />
       </button>
       <button onClick={Layout.CardLayout}>
-        <IoIosBrowsers size={40} />
+        <IoIosBrowsers size={35} />
       </button>
       <div className="article-container">
         {/* Row 1  */}
         <div className="article-row">
-          <div className="article-card">
-            <img src={LakersLogo} alt="Lakers logo" className="article-img" />
-            <div className="article-header-wordz">
+          <NavLink
+            to="/legit-contenders"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img
+                  src={KobeChampionship}
+                  alt="Kobe championship"
+                  className="article-img"
+                />
+              </div>
               <h5 className="article-header">
-                Article header: blah blah blah blah
+                Who Are Legitimate Title Contenders? Post Trade-Deadline Edition
               </h5>
-              <p>Article caption: blah blah blah blah</p>
             </div>
+          </NavLink>
+          <div className="article-card">
+            <div className="article-img-container">
+              <img src={LakersLogo} alt="Lakers logo" className="article-img" />
+            </div>
+
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
           <div className="article-card">
-            <img src={LakersLogo} alt="Lakers logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
+            <div className="article-img-container">
+              <img src={LakersLogo} alt="Lakers logo" className="article-img" />
             </div>
-          </div>
-          <div className="article-card">
-            <img src={LakersLogo} alt="Lakers logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
-            </div>
+
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
         </div>
         {/* Row 2 */}
         <div className="article-row">
           <div className="article-card">
-            <img src={LakersLogo} alt="Lakers logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
+            <div className="article-img-container">
+              <img src={LakersLogo} alt="Lakers logo" className="article-img" />
             </div>
+
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
           <div className="article-card">
-            <img src={LakersLogo} alt="Lakers logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
+            <div className="article-img-container">
+              <img src={LakersLogo} alt="Lakers logo" className="article-img" />
             </div>
+
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
           <div className="article-card">
-            <img src={LakersLogo} alt="Lakers logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
+            <div className="article-img-container">
+              <img src={LakersLogo} alt="Lakers logo" className="article-img" />
             </div>
+
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
         </div>
         {/* Row 3 */}
         <div className="article-row">
           <div className="article-card">
-            <img src={LakersLogo} alt="Lakers logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
+            <div className="article-img-container">
+              <img src={LakersLogo} alt="Lakers logo" className="article-img" />
             </div>
+
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
           <div className="article-card">
-            <img src={LakersLogo} alt="Lakers logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
+            <div className="article-img-container">
+              <img src={LakersLogo} alt="Lakers logo" className="article-img" />
             </div>
+
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
           <div className="article-card">
-            <img src={LakersLogo} alt="Lakers logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
+            <div className="article-img-container">
+              <img src={LakersLogo} alt="Lakers logo" className="article-img" />
             </div>
+
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
         </div>
       </div>
