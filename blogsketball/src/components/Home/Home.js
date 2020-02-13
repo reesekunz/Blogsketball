@@ -4,6 +4,8 @@ import BlogsketballIMG from "../../images/Blogsketball.png";
 import { IoLogoInstagram, IoLogoFacebook, IoLogoTwitter } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 import KobeChampionship from "../../images/KobeChampionship.jpeg";
+import Zion from "../../images/Zion.jpeg";
+import Baylor from "../../images/Baylor.jpeg";
 
 function Home() {
   return (
@@ -32,30 +34,48 @@ function Home() {
       <h3 className="header">Latest</h3>
       <div className="second-section">
         <div className="latest-articles-container">
-          <div className="article">
-            <img
-              src={BlogsketballIMG}
-              className="latest-articles-img"
-              alt="latest article"
-            />
-            <div className="article-content">
-              <p className="article-date">Feb. 6 2020</p>
-              <h3 className="latest-article-header">Latest Article Header</h3>
-              <div className="article-tag">College Basketball</div>
+          <NavLink
+            to="/2019-redraft"
+            activeClassName="activeNavButton"
+            className="home-article-link"
+          >
+            <div className="article">
+              <img
+                src={Zion}
+                className="latest-articles-img"
+                alt="Zion article"
+              />
+              <div className="article-content">
+                <p className="article-date">Feb. 12 2020</p>
+                <h3 className="latest-article-header">2019 Lottery Redraft </h3>
+                <div className="article-tag">
+                  Tags: Pelicans, Grizzlies, Knicks, Hawks, Cavaliers,
+                  Timberwolves, Bulls, Wizards, Suns, Hornets, Heat, Celtics
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="article">
-            <img
-              src={BlogsketballIMG}
-              className="latest-articles-img"
-              alt="latest article"
-            />
-            <div className="article-content">
-              <p className="article-date">Feb. 6 2020</p>
-              <h3 className="latest-article-header">Latest Article Header</h3>
-              <div className="article-tag">College Basketball</div>
+          </NavLink>
+
+          <NavLink
+            to="/top-10-ncaa"
+            activeClassName="activeNavButton"
+            className="home-article-link"
+          >
+            <div className="article">
+              <img
+                src={Baylor}
+                className="latest-articles-img"
+                alt="Baylor Bears "
+              />
+              <div className="article-content">
+                <p className="article-date">Feb. 12 2020</p>
+                <h3 className="latest-article-header">
+                  Breaking Down The Top-10 Ranked College Basketball Teams
+                </h3>
+                <div className="article-tag">Tags: NCAA</div>
+              </div>
             </div>
-          </div>
+          </NavLink>
           <div className="article">
             <img
               src={BlogsketballIMG}

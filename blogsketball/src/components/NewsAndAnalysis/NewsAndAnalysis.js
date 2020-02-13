@@ -3,6 +3,7 @@ import "./NewsAndAnalysis.scss";
 import { NavLink } from "react-router-dom";
 import BlogsketballIMG from "../../images/Blogsketball.png";
 import KobeChampionship from "../../images/KobeChampionship.jpeg";
+import Zion from "../../images/Zion.jpeg";
 
 function ViewGameArticles() {
   var gameArticles = document.querySelectorAll("#game");
@@ -118,10 +119,29 @@ function NewsAndAnalysis() {
         </div>
       </div>
       <div className="all-articles-container">
-        <div className="article-card" id="game">
-          game Article card
+        {/* 2019 Redraft */}
+        <div className="article-card" id="other">
+          <NavLink
+            to="/2019-redraft"
+            activeClassName="activeNavButton"
+            className="news-article-link"
+          >
+            <h3 className="article-card-header"> 2019 Lottery Re-Draft</h3>
+            <div className="article-card-row-2">
+              <img
+                src={Zion}
+                alt="zion williamson"
+                className="article-card-img"
+              />{" "}
+              <div className="row2-content">
+                <div className="date-written">Feb. 12 2020</div>
+                <div className="tag">Tag: Other</div>
+              </div>
+            </div>
+          </NavLink>
         </div>
 
+        {/* Legit Title Contenders Article  */}
         <div className="article-card" id="trades">
           <NavLink
             to="/legit-contenders"
@@ -140,9 +160,7 @@ function NewsAndAnalysis() {
               />{" "}
               <div className="row2-content">
                 <div className="date-written">Feb. 8th, 2020</div>
-                <div className="tag">
-                  Tags: Trades, Lakers, Bucks, Clippers, Rockets, 76ers
-                </div>
+                <div className="tag">Tag: Trades</div>
               </div>
             </div>
           </NavLink>
@@ -152,7 +170,13 @@ function NewsAndAnalysis() {
           FA Article card
         </div>
         <div className="article-card" id="other">
-          other Article card
+          <NavLink
+            to="/legit-contenders"
+            activeClassName="activeNavButton"
+            className="news-article-link"
+          >
+            other Article card
+          </NavLink>
         </div>
         <div className="article-card" id="game">
           game Article card

@@ -39,10 +39,11 @@ import Spurs from "./components/Teams/SanAntonioSpurs";
 import Raptors from "./components/Teams/TorontoRaptors";
 import Jazz from "./components/Teams/UtahJazz";
 import Wizards from "./components/Teams/WashingtonWizards";
-
-import LegitContenders from "./articles/LegitContenders";
 import { IoIosArrowDown } from "react-icons/io";
 
+import LegitContenders from "./articles/LegitContenders";
+import Redraft from "./articles/2019Redraft";
+import Top10NCAA from "./articles/Top10NCAA";
 function App() {
   return (
     <div className="App">
@@ -272,18 +273,8 @@ function App() {
 
       {/* Article Routes  */}
       <Route path="/legit-contenders" component={LegitContenders} />
-      {/* <Route path="/steele-stadium-wall" component={Article2} />
-      <Route path="/where-are-they-now" component={Article3} />
-      <Route path="/marky-is-killing-it" component={Article4} />
-      <Route path="/pablo-scandal" component={Article5} />
-      <Route path="/pete-wheeler-promoted" component={Article6} />
-      <Route path="/annie-suspended" component={Article7} />
-      <Route path="/vinnie-the-gooch-rager" component={Article8} />
-      <Route path="/lisa-crockett-dui" component={Article9} />
-      <Route path="/pablos-decision" component={Article10} />
-      <Route path="/dante-passes-chestnut" component={Article11} />
-      <Route path="/clanky-marries-roomba" component={Article12} />
-      <Route path="/mikey-died" component={Article13} /> */}
+      <Route path="/2019-redraft" component={Redraft} />
+      <Route path="/top-10-ncaa" component={Top10NCAA} />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import "./TopSection.scss";
 import { NavLink } from "react-router-dom";
 import BlogsketballIMG from "../../../images/Blogsketball.png";
+import Baylor from "../../../images/Baylor.jpeg";
 
 function TopSection() {
   return (
@@ -47,16 +48,15 @@ function TopSection() {
         {/* Third article  */}
         <div className="section-1-main-img">
           <NavLink
-            to="/pablo-scandal"
+            to="/top-10-ncaa"
             activeClassName="activeNavButton"
             className="article-link"
           >
-            <img
-              className="main-img"
-              src={BlogsketballIMG}
-              alt="Pablo Cheating Scandals"
-            />
-            <div className="article-header">Main Article </div>
+            <img className="main-img" src={Baylor} alt="Baylor Bears" />
+            <div className="article-header">
+              {" "}
+              Breaking Down The Top-10 Ranked College Basketball Teams
+            </div>
           </NavLink>
         </div>
         {/* Column 3 */}
