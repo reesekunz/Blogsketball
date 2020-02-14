@@ -146,19 +146,19 @@ function Top10NCAA() {
         </ul>
         <p>
           I don't care what conference you play in, 25-0 is extremely
-          impressive. What's interesting about SDSU is that three players in their
-          starting lineup are transfers. Also, all four of San Diego State's
-          top scorers are upperclassmen. They'll look to rely on that experience
-          come March. Something else they'll look to rely on - the talent of
-          Malachi Flynn, who is averaging 16.4 points a game. San Diego State
-          has never been a one seed and has only been a two seed once in 2011.
-          In fact, no team coming out of the Mountain West has ever gotten a one
-          seed. Could this be the year they finally get that coveted one seed?
-          If they win out, I see it very hard for them to not get it -
-          especially with all the inconsistent play from the top teams this
-          season. Regardless of seed, San Diego State is definitely another team
-          to watch out for to cut down the nets. They're a well balanced team
-          that doesn't really have any weak points.
+          impressive. What's interesting about SDSU is that three players in
+          their starting lineup are transfers. Also, all four of San Diego
+          State's top scorers are upperclassmen. They'll look to rely on that
+          experience come March. Something else they'll look to rely on - the
+          talent of Malachi Flynn, who is averaging 16.4 points a game. San
+          Diego State has never been a one seed and has only been a two seed
+          once in 2011. In fact, no team coming out of the Mountain West has
+          ever gotten a one seed. Could this be the year they finally get that
+          coveted one seed? If they win out, I see it very hard for them to not
+          get it - especially with all the inconsistent play from the top teams
+          this season. Regardless of seed, San Diego State is another team to
+          watch out for to cut down the nets. They're a well balanced team that
+          doesn't really have any weak points.
         </p>
         {/* Louisville */}
         <h5>5. Lousiville</h5>
@@ -183,7 +183,7 @@ function Top10NCAA() {
           </li>
           <li>
             {" "}
-            Ryan McMahon G, SR: 8.8 PPG, 1.8 AST, 1.1 REB, 43.8FG%, 46.1 3PT%,
+            Ryan McMahon G, SR: 8.8 PPG, 1.8 AST, 1.1 REB, 43.8 FG%, 46.1 3PT%,
             93.5 FT%
           </li>
         </ul>
@@ -204,60 +204,196 @@ function Top10NCAA() {
         <p>Vegas Odds: +1600 </p>
         <p>Top Players:</p>
         <ul>
-          <li>Player 1</li>
-          <li>Player 2</li>
-          <li>3</li>
-          <li>4</li>
+          <li>
+            {" "}
+            Obi Toppin F, SO: 19.7 PPG, 2.1 AST, 7.9 REB, 63.1 FG%, 35.9 3PT%,
+            71.8 FT%
+          </li>
+          <li>
+            {" "}
+            Jalen Crutcher G, JR: 14.7 PPG, 5.1 AST, 3.3 REB, 46.5 FG%, 41.8
+            3PT%, 86.8 FT%
+          </li>
+          <li>
+            {" "}
+            Ibi Watson G, JR: 11.1 PPG, 1.3 AST, 2.6 REB, 50.0 FG%, 41.4 3PT%,
+            84.3 FT%
+          </li>
+          <li>
+            {" "}
+            Trey Landers G, SR: 11.0 PPG, 2.6 AST, 6.2 REB, 58.8 FG%, 38.5 3PT%,
+            66.7 FT%
+          </li>
         </ul>
-        <p>Blah blah blah</p>
+        <p>
+          Dayton was unranked coming into the season and now sit at #6 in the AP
+          Poll. Obi Toppin has to, at the very least, be a finalist for the
+          Naismith Player of the Year, averaging almost 20 points a game on an
+          extremely efficient 63% from the field. Dayton would be an incredible
+          story if they could cap off this historic season with a National
+          Championship. They have one of the most explosive offenses in the
+          league, I just worry about their inconsistent defense at times. Still,
+          with their only losses being at home vs Kansas and on the road against
+          Colorado, Dayton definitely has a good enough roster to go far in the
+          tournament.
+        </p>
         {/* Duke*/}
         <h5>7. Duke</h5>
         <p>Record: 20-3 </p>
         <p>Vegas Odds: +1000 </p>
         <p>Top Players:</p>
         <ul>
-          <li>Player 1</li>
-          <li>Player 2</li>
-          <li>3</li>
-          <li>4</li>
+          <li>
+            Vernon Carey Jr. C, FR: 17.5 PPG, 1.1 AST, 8.9 REB, 58.3 FG%, 38.5
+            3PT%, 63.8 FT%
+          </li>
+          <li>
+            Tre Jones G, SO: 15.6 PPG, 6.6 AST, 4.7 REB, 43.4 FG%, 32.1 3PT%,
+            73.5 FT%
+          </li>
+          <li>
+            Cassius Stanley G, FR: 12.3 PPG, 1.1 AST, 6.2 REB, 48.5 FG%, 33.3
+            3PT%, 74.1 FT%
+          </li>
+          <li>
+            Matthew Hurt F, FR: 10.5 PPG, 0.9 AST, 3.6 REB, 49.2 FG%, 40.4 3PT%,
+            78.9 FT%
+          </li>
         </ul>
-        <p>Blah blah blah</p>
+        <p>
+          Another year, another talented, but inexperienced Duke basketball
+          team. Out of all the teams on the top 10, Duke's top players are by
+          far the youngest. The good news, like always, is that all four of the
+          ones listed above are good enough to get drafted in the NBA. In my
+          latest version of the{" "}
+          <a href="blogsketball.com/nba-mock-draft">2020 NBA Mock Draft</a>, I
+          have Veron Carey Jr going at #14, Tre Jones #31, Cassius Stanley #37,
+          and Matthew Hurt #26. More good news for Duke - Coach K is still their
+          coach. One thing about them that somewhat worries me is their guards'
+          ability shoot. Tre Jones and Cassius Stanley are both very average
+          shooters, and I just hope they have enough to make teams pay for
+          helping out on Carey Jr. down low. Still, there's a reason Duke is
+          tied for 2nd in Vegas odds to win it all. It's typically a "safe" bet
+          to roll with coach K, a should-be Naismith finalist, and 3 or 4
+          potential first round picks on the same team.
+        </p>
         {/* Florida State */}
         <h5>8. Florida State</h5>
         <p>Record: 20-3 </p>
         <p>Vegas Odds: +3300 </p>
         <p>Top Players:</p>
         <ul>
-          <li>Player 1</li>
-          <li>Player 2</li>
-          <li>3</li>
-          <li>4</li>
+          <li>
+            {" "}
+            Devin Vassell G, SO: 13.4PPG, 1.7 AST, 5.3 REB, 49.6 FG%, 42.0 3PT%,
+            73.8 FT%
+          </li>
+          <li>
+            {" "}
+            Trent Forrest G, SR: 11.6 PPG, 4.3 AST, 4.5 REB, 44.5 FG%, 26.2
+            3PT%, 84.5 FT%
+          </li>
+          <li>
+            {" "}
+            M.J. Walker G, JR: 10.4 PPG, 1.3 AST, 1.7 REB, 35.8 FG%, 34.8 3PT%,
+            82.4 FT%
+          </li>
+          <li>
+            {" "}
+            Patrick Williams F, FR: 8.5 PPG, 1.1 AST, 3.5 REB, 45.6 FG%, 32.5
+            3PT%, 86.7 FT%
+          </li>
         </ul>
-        <p>Blah blah blah</p>
+        <p>
+          Florida State is probably the team I like the least out of the current
+          top 10 in terms of their National Championship odds. Vegas seems to
+          agree, with them and Maryland tied for last amongst the top 10 in odds
+          to win it all at +3300. They're still a great team, but FSU's
+          inconsistency on offense worries me. Too many times I've seen a
+          sleeper team win over a lower seed because the lower seed got into
+          offensive droughts where it was hard for them to find a bucket. While
+          guards Vassell, Forrest, and Walker are all obviously extremely
+          talented, their lack of offensive firepower worries me too much to
+          confidently pick them to win it all this year. Florida State fans, if
+          you're reading this, I've been wrong before.
+        </p>
         {/* Maryland */}
         <h5>9. Maryland</h5>
         <p>Record: 19-4 </p>
         <p>Vegas Odds: +3300 </p>
         <p>Top Players:</p>
         <ul>
-          <li>Player 1</li>
-          <li>Player 2</li>
-          <li>3</li>
-          <li>4</li>
+          <li>
+            {" "}
+            Anthony Cowan Jr. G, SR: 16.3 PPG, 4.6 AST, 3.6 REB, 39.0 FG%, 33.6
+            3PT%, 78.2 FT%
+          </li>
+          <li>
+            {" "}
+            Jalen Smith F, SO: 15.1 PPG, 0.8 AST, 10.2 REB, 53.6 FG%, 39.1 3PT%,
+            75.7 FT%
+          </li>
+          <li>
+            {" "}
+            Aaron Wiggins G, SO: 10.4 PPG, 1.5 AST, 5.3 REB, 35.7 FG%, 31.0
+            3PT%, 75.0 FT%
+          </li>
+          <li>
+            {" "}
+            Darryl Morsell G, JR: 8.6 PPG, 1.9 AST, 4.8 REB, 44.3 FG%, 37.5
+            3PT%, 78.0 FT%
+          </li>
         </ul>
-        <p>Blah blah blah</p>
+        <p>
+          Maryland is 1st in the Big Ten at 19-4. I'm slightly concerned that
+          they haven't been tested that much yet, with the highest ranked team
+          they played at the time being #11 Ohio State at home, but they'll get
+          a chance to add a big win to their resume this Saturday when they go
+          on the road to play Michigan State. Maryland is another team that sets
+          the tone on the defensive side of the ball, ranking #5 in adjD on
+          KenPom (I'll analyze everyone's KenPom ratings in a later article).
+          The question is, will the duo of Anthony Cowan Jr. and Jalen Smith be
+          enough offense come tournament time? Maryland will go as far as those
+          two can take them.
+        </p>
         {/* Seton Hall */}
         <h5>10. Seton Hall</h5>
         <p>Record: 18-5 </p>
         <p>Vegas Odds: +2200 </p>
         <p>Top Players:</p>
         <ul>
-          <li>Player 1</li>
-          <li>Player 2</li>
-          <li>3</li>
-          <li>4</li>
+          <li>
+            {" "}
+            Myles Powell G, SR: 21.4 PPG, 2.3 AST, 4.4 REB, 40.4 FG%, 31.0 3PT%,
+            79.8 FT%
+          </li>
+          <li>
+            {" "}
+            Quincy McKnight G, SR: 11.8 PPG, 5.5 AST, 3.3 REB, 43.6 FG%, 35.0
+            3PT%, 84.6 FT%
+          </li>
+          <li>
+            {" "}
+            Sandro Mamukelashvili F, JR: 10.5 PPG, 1.3 AST, 5.1 REB, 51.8 FG%,
+            39.4 3PT%, 57.1 FT%
+          </li>
+          <li>
+            {" "}
+            Jared Rhoden G, SO: 9.2 PPG, 1.1 AST, 6.9 REB, 42.7 FG%, 29.9 3PT%,
+            62.9 FT%
+          </li>
         </ul>
-        <p>Blah blah blah</p>
+        <p>
+          Seton Hall sits atop the Big East with a 18-5 record. Myles Powell has
+          a lot to do with them being first in the Big East, averaging an
+          impressive 21.4 points per game. Like Florida State and Maryland,
+          Seton Hall is a great defensive team (#8 in KenPom adjD). Powell,
+          McKnight, and Rhoden all average over a steal per game. I just get
+          worried looking at those field goal and three point percentages from
+          their guards - Powell (40.4 FG%, 31.0 3PT%), McKnight (43.6%, 35.0%),
+          and Rhoden (42.7%, 29.9%) need to be more efficient shooting the ball
+          if they want to have a legitimate chance of winning it all.
+        </p>
 
         {/* <div className="article-img-container">
           <img
@@ -272,10 +408,19 @@ function Top10NCAA() {
       </div>
       <p>
         I'm seeing a common theme here with the top teams this season -
-        experience. It seems like this year is a little more unique compared to
-        past seasons because the majority of the star players or best players on
-        top teams this season aren't Freshman.{" "}
+        experience. This year seems unique compared to past seasons because the
+        majority of the collegiate star players aren't Freshman. With top
+        potential NBA draft picks like James Wiseman, LaMelo Ball, and RJ
+        Hampton, among others, deciding to forgo their NCAA experience and
+        prepare for the NBA, veteran college teams seem to be dominating even
+        more so than usual. Out of all the top players on each
+        respective top ten team, the only Freshman is Vernon Carey Jr. What also
+        makes this a crazy year is the fact that multiple teams in the top 10
+        weren't even ranked in the preseason polls. San Diego State, Dayton, and
+        Florida State were all unranked going into this season, and now are at
+        least in the conversation as a team that could potentially win it all.
       </p>
+      <p>March is coming.</p>
     </div>
   );
 }
