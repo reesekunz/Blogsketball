@@ -6,11 +6,13 @@ import { NavLink } from "react-router-dom";
 import KobeChampionship from "../../images/KobeChampionship.jpeg";
 import Zion from "../../images/Zion.jpeg";
 import Baylor from "../../images/Baylor.jpeg";
+import KenPom from "../../images/KenPom.png";
 
 function Home() {
   return (
     <div className="home-container">
       <div className="top-section">
+        {/* Legit contenders article */}
         <NavLink
           to="/legit-contenders"
           activeClassName="activeNavButton"
@@ -34,6 +36,7 @@ function Home() {
       <h3 className="header">Latest</h3>
       <div className="second-section">
         <div className="latest-articles-container">
+          {/* 2019 redraft article */}
           <NavLink
             to="/2019-redraft"
             activeClassName="activeNavButton"
@@ -55,7 +58,7 @@ function Home() {
               </div>
             </div>
           </NavLink>
-
+          {/* Top 10 ncaa article */}
           <NavLink
             to="/top-10-ncaa"
             activeClassName="activeNavButton"
@@ -76,18 +79,27 @@ function Home() {
               </div>
             </div>
           </NavLink>
-          <div className="article">
-            <img
-              src={BlogsketballIMG}
-              className="latest-articles-img"
-              alt="latest article"
-            />
-            <div className="article-content">
-              <p className="article-date">Feb. 6 2020</p>
-              <h3 className="latest-article-header">Latest Article Header</h3>
-              <div className="article-tag">College Basketball</div>
+          {/* KenPom analysis article */}
+          <NavLink
+            to="/kenpom-analysis"
+            activeClassName="activeNavButton"
+            className="home-article-link"
+          >
+            <div className="article">
+              <img
+                src={KenPom}
+                className="latest-articles-img"
+                alt="KenPom Ratings"
+              />
+              <div className="article-content">
+                <p className="article-date">Feb. 14 2020</p>
+                <h3 className="latest-article-header">
+                  Using KenPom Ratings to Evaluate Potential National Champions
+                </h3>
+                <div className="article-tag">Tags: NCAA</div>
+              </div>
             </div>
-          </div>
+          </NavLink>
           <div className="article">
             <img
               src={BlogsketballIMG}

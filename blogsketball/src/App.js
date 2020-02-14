@@ -44,6 +44,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import LegitContenders from "./articles/LegitContenders";
 import Redraft from "./articles/2019Redraft";
 import Top10NCAA from "./articles/Top10NCAA";
+import KenPom from "./articles/KenPom";
 function App() {
   return (
     <div className="App">
@@ -275,6 +276,7 @@ function App() {
       <Route path="/legit-contenders" component={LegitContenders} />
       <Route path="/2019-redraft" component={Redraft} />
       <Route path="/top-10-ncaa" component={Top10NCAA} />
+      <Route path="/kenpom-analysis" component={KenPom} />
     </div>
   );
 }
