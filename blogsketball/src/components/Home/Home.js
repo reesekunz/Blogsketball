@@ -6,7 +6,12 @@ import { NavLink } from "react-router-dom";
 import KobeChampionship from "../../images/KobeChampionship.jpeg";
 import Zion from "../../images/Zion.jpeg";
 import Baylor from "../../images/Baylor.jpeg";
-import KenPom from "../../images/KenPom.png";
+import CutNet from "../../images/CutNet.jpeg";
+import AllStarGame from "../../images/AllStarGame.jpeg";
+import Mikal from "../../images/Mikal.jpeg";
+import Kyle from "../../images/Kyle.jpeg";
+import Lou from "../../images/Lou.jpeg";
+import Bracket from "../../images/Bracketology.png";
 
 function Home() {
   return (
@@ -87,9 +92,9 @@ function Home() {
           >
             <div className="article">
               <img
-                src={KenPom}
+                src={CutNet}
                 className="latest-articles-img"
-                alt="KenPom Ratings"
+                alt="Literally just cutting a net"
               />
               <div className="article-content">
                 <p className="article-date">Feb. 14 2020</p>
@@ -100,66 +105,111 @@ function Home() {
               </div>
             </div>
           </NavLink>
-          <div className="article">
-            <img
-              src={BlogsketballIMG}
-              className="latest-articles-img"
-              alt="latest article"
-            />
-            <div className="article-content">
-              <p className="article-date">Feb. 6 2020</p>
-              <h3 className="latest-article-header">Latest Article Header</h3>
-              <div className="article-tag">College Basketball</div>
+          {/* 2020 NBA All star game article */}
+          <NavLink
+            to="/2020-all-star-game"
+            activeClassName="activeNavButton"
+            className="home-article-link"
+          >
+            <div className="article">
+              <img
+                src={AllStarGame}
+                className="latest-articles-img"
+                alt="NBA all star game"
+              />
+              <div className="article-content">
+                <p className="article-date">Feb. 16 2020</p>
+                <h3 className="latest-article-header">
+                  2020 NBA All-Star Game Epitomized "Mamba Mentality"
+                </h3>
+                <div className="article-tag">Tags: News and Analysis</div>
+              </div>
             </div>
-          </div>
-          <div className="article">
-            <img
-              src={BlogsketballIMG}
-              className="latest-articles-img"
-              alt="latest article"
-            />
-            <div className="article-content">
-              <p className="article-date">Feb. 6 2020</p>
-              <h3 className="latest-article-header">Latest Article Header</h3>
-              <div className="article-tag">College Basketball</div>
+          </NavLink>
+          {/* Top 10 Underrated article */}
+          <NavLink
+            to="/top-10-underrated"
+            activeClassName="activeNavButton"
+            className="home-article-link"
+          >
+            <div className="article">
+              <img
+                src={Mikal}
+                className="latest-articles-img"
+                alt="Mikal Bridges"
+              />
+              <div className="article-content">
+                <p className="article-date">Feb. 18 2020</p>
+                <h3 className="latest-article-header">
+                  Ranking the Top 10 Most Underrated Players
+                </h3>
+                <div className="article-tag">
+                  Tags: Nuggets, Kings, Pelicans, Timberwolves, Spurs, Suns,
+                  Bucks, Jazz, Mavericks
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="article">
-            <img
-              src={BlogsketballIMG}
-              className="latest-articles-img"
-              alt="latest article"
-            />
-            <div className="article-content">
-              <p className="article-date">Feb. 6 2020</p>
-              <h3 className="latest-article-header">Latest Article Header</h3>
-              <div className="article-tag">College Basketball</div>
+          </NavLink>
+          {/* Top 10 Overrated article */}
+          <NavLink
+            to="/top-10-overrated"
+            activeClassName="activeNavButton"
+            className="home-article-link"
+          >
+            <div className="article">
+              <img
+                src={Kyle}
+                className="latest-articles-img"
+                alt="Kyle Lowry"
+              />
+              <div className="article-content">
+                <p className="article-date">Feb. 19 2020</p>
+                <h3 className="latest-article-header">
+                  Ranking the Top 10 Most Overrated Players
+                </h3>
+                <div className="article-tag">
+                  Tags: Nuggets, Clippers, Knicks, Lakers, Cavaliers, Kings,
+                  Heat, Jazz, Hornets, Raptors
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="article">
-            <img
-              src={BlogsketballIMG}
-              className="latest-articles-img"
-              alt="latest article"
-            />
-            <div className="article-content">
-              <p className="article-date">Feb. 6 2020</p>
-              <h3 className="latest-article-header">Latest Article Header</h3>
-              <div className="article-tag">College Basketball</div>
+          </NavLink>
+          {/* Clippers Bench article */}
+          <NavLink
+            to="/clippers-are-loaded"
+            activeClassName="activeNavButton"
+            className="home-article-link"
+          >
+            <div className="article">
+              <img src={Lou} className="latest-articles-img" alt="Lou Will" />
+              <div className="article-content">
+                <p className="article-date">Feb. 19 2020</p>
+                <h3 className="latest-article-header">
+                  Clippers Now Officially Have Deepest Team in the League{" "}
+                </h3>
+                <div className="article-tag">Tags: Clippers</div>
+              </div>
             </div>
-          </div>
-          <div className="article">
-            <img
-              src={BlogsketballIMG}
-              className="latest-articles-img"
-              alt="latest article"
-            />
-            <div className="article-content">
-              <p className="article-date">Feb. 6 2020</p>
-              <h3 className="latest-article-header">Latest Article Header</h3>
-              <div className="article-tag">College Basketball</div>
+          </NavLink>
+          {/* Clippers Bench article */}
+          <NavLink
+            to="/march-is-coming"
+            activeClassName="activeNavButton"
+            className="home-article-link"
+          >
+            <div className="article">
+              <img
+                src={Bracket}
+                className="latest-articles-img"
+                alt="Bracketology"
+              />
+              <div className="article-content">
+                <p className="article-date">Feb. 20 2020</p>
+                <h3 className="latest-article-header">March is Coming </h3>
+                <div className="article-tag">Tags: NCAA</div>
+              </div>
             </div>
-          </div>
+          </NavLink>
         </div>
         <div className="side-bar">
           <div className="side-bar-wrapper">

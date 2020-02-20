@@ -49,42 +49,33 @@ function KenPom() {
         </p>
         {/* Baylor  */}
         <h5>1. Baylor</h5>
-        <p>Record: 21-1 </p>
         <p>KenPom Ratings: AdjEm: +26.35 AdjO: 21 AdjD: 4</p>
         {/* Gonzaga */}
         <h5>2. Gonzaga</h5>
-        <p>Record: 25-1</p>
-        <p>KenPom Ratings: AdjEm: +27.61 AdjO: 1 AdjD: 35</p>={/* Kansas */}
+        <p>KenPom Ratings: AdjEm: +27.61 AdjO: 1 AdjD: 35</p>
+        {/* Kansas */}
         <h5>3. Kansas</h5>
-        <p>Record: 20-3 </p>
         <p>***KenPom Ratings: AdjEm: +30.12 AdjO: 12 AdjD: 1</p>
         {/* San Diego State */}
         <h5>4. San Diego State</h5>
-        <p>Record: 24-0 </p>
         <p>***KenPom Ratings: AdjEm: +26.46 AdjO: 9 AdjD: 9</p>
         {/* Louisville */}
         <h5>5. Lousiville</h5>
-        <p>Record: 21-3 </p>
         <p>KenPom Ratings: AdjEm: +23.51 AdjO: 7 AdjD: 33</p>
         {/* Dayton */}
         <h5>6. Dayton</h5>
-        <p>Record: 21-1 </p>
         <p>KenPom Ratings: AdjEm: +24.73 AdjO: 2 AdjD: 55</p>
         {/* Duke*/}
         <h5>7. Duke</h5>
-        <p>Record: 20-3 </p>
         <p>***KenPom Ratings: AdjEm: +26.76 AdjO: 8 AdjD: 11</p>
         {/* Florida State */}
         <h5>8. Florida State</h5>
-        <p>Record: 20-3 </p>
         <p>KenPom Ratings: AdjEm: +19.37 AdjO: 43 AdjD: 14</p>
         {/* Maryland */}
         <h5>9. Maryland</h5>
-        <p>Record: 19-4 </p>
         <p>KenPom Ratings: AdjEm: +22.40 AdjO: 37 AdjD: 5</p>
         {/* Seton Hall */}
         <h5>10. Seton Hall</h5>
-        <p>Record: 18-5 </p>
         <p>KenPom Ratings: AdjEm: +21.13 AdjO: 40 AdjD: 8</p>
       </div>
       <p>

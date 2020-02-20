@@ -5,6 +5,7 @@ import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
 import { NavLink } from "react-router-dom";
 import Zion from "../../images/Zion.jpeg";
+import Collin from "../../images/Collin.jpeg";
 
 function Cavs() {
   return (
@@ -34,12 +35,20 @@ function Cavs() {
               <h5 className="article-header">2019 Lottery Re-Draft</h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={CavsLogo} alt="Cavs logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          <NavLink
+            to="/top-10-overrated"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Collin} alt="Collin" className="article-img" />
+              </div>
+              <h5 className="article-header">
+                Ranking the Top 10 Most Overrated Players
+              </h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img src={CavsLogo} alt="Cavs logo" className="article-img" />
             <h5 className="article-header">

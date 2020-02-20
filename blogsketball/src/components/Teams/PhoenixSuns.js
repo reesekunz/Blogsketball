@@ -5,6 +5,7 @@ import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
 import { NavLink } from "react-router-dom";
 import Zion from "../../images/Zion.jpeg";
+import Mikal from "../../images/Mikal.jpeg"
 
 function Suns() {
   return (
@@ -34,12 +35,20 @@ function Suns() {
               <h5 className="article-header">2019 Lottery Re-Draft</h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={SunsLogo} alt="Suns logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+         {/* Top 10 underrated article */}
+         <NavLink
+            to="/top-10-underrated"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <img src={Mikal} alt="Mikal Bridges" className="article-img" />
+              <h5 className="article-header">
+                {" "}
+                Ranking the Top 10 Most Underrated Players
+              </h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img src={SunsLogo} alt="Suns logo" className="article-img" />
             <h5 className="article-header">

@@ -3,6 +3,8 @@ import "./TopSection.scss";
 import { NavLink } from "react-router-dom";
 import BlogsketballIMG from "../../../images/Blogsketball.png";
 import Baylor from "../../../images/Baylor.jpeg";
+import CutNet from "../../../images/CutNet.jpeg";
+import Bracket from "../../../images/Bracketology.png";
 
 function TopSection() {
   return (
@@ -13,34 +15,32 @@ function TopSection() {
       <div className="section-1-container">
         {/* Column 1 */}
         <div className="section-1-column-1">
-          {/* First article */}
+          {/* Ken Pom article */}
           <div className="section-1-second-img">
             <NavLink
-              to="/kenny-bear-attack"
+              to="/kenpom-analysis"
               activeClassName="activeNavButton"
               className="article-link"
             >
               <img
                 className="second-img"
-                src={BlogsketballIMG}
-                alt="Secondary article image"
+                src={CutNet}
+                alt="literally just cutting a net"
               />
-              <div className="article-header">Second Article </div>
+              <div className="article-header">
+                Using KenPom Ratings to Evaluate Potential National Champions
+              </div>
             </NavLink>
           </div>
           {/* Second article  */}
           <div className="section-1-third-img">
             <NavLink
-              to="/steele-stadium-wall"
+              to="march-is-coming"
               activeClassName="activeNavButton"
               className="article-link"
             >
-              <img
-                className="third-img"
-                src={BlogsketballIMG}
-                alt="Steele Stadium"
-              />
-              <div className="article-header">Third article</div>
+              <img className="third-img" src={Bracket} alt="Bracketology" />
+              <div className="article-header">March is Coming</div>
             </NavLink>
           </div>
         </div>

@@ -5,6 +5,7 @@ import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
 import { NavLink } from "react-router-dom";
 import Zion from "../../images/Zion.jpeg";
+import Terry from "../../images/Terry.jpeg";
 
 function Hornets() {
   return (
@@ -34,12 +35,20 @@ function Hornets() {
               <h5 className="article-header">2019 Lottery Re-Draft</h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={HornetsLogo} alt="Hornets logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          <NavLink
+            to="/top-10-overrated"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Terry} alt="Scary Terry" className="article-img" />
+              </div>
+              <h5 className="article-header">
+                Ranking the Top 10 Most Overrated Players
+              </h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img src={HornetsLogo} alt="Hornets logo" className="article-img" />
             <h5 className="article-header">

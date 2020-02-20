@@ -5,6 +5,7 @@ import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
 import { NavLink } from "react-router-dom";
 import Zion from "../../images/Zion.jpeg";
+import Lonzo from "../../images/Lonzo.jpeg";
 
 function Pelicans() {
   return (
@@ -24,6 +25,7 @@ function Pelicans() {
       <div className="article-container">
         {/* Row 1  */}
         <div className="article-row">
+          {/* Loterry redraft article */}
           <NavLink
             to="/2019-redraft"
             activeClassName="activeNavButton"
@@ -34,16 +36,20 @@ function Pelicans() {
               <h5 className="article-header">2019 Lottery Re-Draft</h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img
-              src={PelicansLogo}
-              alt="Pelicans logo"
-              className="article-img"
-            />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* Top 10 underrated article */}
+          <NavLink
+            to="/top-10-underrated"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <img src={Lonzo} alt="Lonzo ball" className="article-img" />
+              <h5 className="article-header">
+                {" "}
+                Ranking the Top 10 Most Underrated Players
+              </h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img
               src={PelicansLogo}

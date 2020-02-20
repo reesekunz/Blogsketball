@@ -1,9 +1,12 @@
 import React from "react";
 import "./NewsAndAnalysis.scss";
 import { NavLink } from "react-router-dom";
-import BlogsketballIMG from "../../images/Blogsketball.png";
+// import BlogsketballIMG from "../../images/Blogsketball.png";
 import KobeChampionship from "../../images/KobeChampionship.jpeg";
 import Zion from "../../images/Zion.jpeg";
+import AllStarGame from "../../images/AllStarGame.jpeg";
+import Mikal from "../../images/Mikal.jpeg";
+import Kyle from "../../images/Kyle.jpeg";
 
 function ViewGameArticles() {
   var gameArticles = document.querySelectorAll("#game");
@@ -166,16 +169,72 @@ function NewsAndAnalysis() {
           </NavLink>
         </div>
 
-        <div className="article-card" id="free-agency">
-          FA Article card
-        </div>
-        <div className="article-card" id="other">
+        {/* All star game article  */}
+        <div className="article-card" id="game">
           <NavLink
-            to="/legit-contenders"
+            to="/2020-all-star-game"
             activeClassName="activeNavButton"
             className="news-article-link"
           >
-            other Article card
+            <h3 className="article-card-header">
+              {" "}
+              2020 NBA All-Star Game Epitomized "Mamba Mentality"
+            </h3>
+            <div className="article-card-row-2">
+              <img
+                src={AllStarGame}
+                alt="all star game"
+                className="article-card-img"
+              />{" "}
+              <div className="row2-content">
+                <div className="date-written">Feb. 16th, 2020</div>
+                <div className="tag">Tag: Game</div>
+              </div>
+            </div>
+          </NavLink>
+        </div>
+        {/* Top 10 underrated article  */}
+        <div className="article-card" id="other">
+          <NavLink
+            to="/top-10-underrated"
+            activeClassName="activeNavButton"
+            className="news-article-link"
+          >
+            <h3 className="article-card-header">
+              {" "}
+              Ranking the Top 10 Most Underrated Players
+            </h3>
+            <div className="article-card-row-2">
+              <img
+                src={Mikal}
+                alt="Mikal Bridges"
+                className="article-card-img"
+              />{" "}
+              <div className="row2-content">
+                <div className="date-written">Feb. 18th, 2020</div>
+                <div className="tag">Tag: Other</div>
+              </div>
+            </div>
+          </NavLink>
+        </div>
+        {/* Top 10 overrated article  */}
+        <div className="article-card" id="other">
+          <NavLink
+            to="/top-10-overrated"
+            activeClassName="activeNavButton"
+            className="news-article-link"
+          >
+            <h3 className="article-card-header">
+              {" "}
+              Ranking the Top 10 Most Overrated Players
+            </h3>
+            <div className="article-card-row-2">
+              <img src={Kyle} alt="Kyle Lowry" className="article-card-img" />{" "}
+              <div className="row2-content">
+                <div className="date-written">Feb. 19th, 2020</div>
+                <div className="tag">Tag: Other</div>
+              </div>
+            </div>
           </NavLink>
         </div>
         <div className="article-card" id="game">

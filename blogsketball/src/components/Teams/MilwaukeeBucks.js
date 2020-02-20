@@ -5,6 +5,7 @@ import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
 import KobeChampionship from "../../images/KobeChampionship.jpeg";
 import { NavLink } from "react-router-dom";
+import Donte from "../../images/Donte.jpeg";
 
 function Bucks() {
   return (
@@ -42,12 +43,24 @@ function Bucks() {
               </h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={BucksLogo} alt="Bucks logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* Top 10 underrated article */}
+          <NavLink
+            to="/top-10-underrated"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <img
+                src={Donte}
+                alt="Donte diving on the floor"
+                className="article-img"
+              />
+              <h5 className="article-header">
+                {" "}
+                Ranking the Top 10 Most Underrated Players
+              </h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img src={BucksLogo} alt="Bucks logo" className="article-img" />
             <h5 className="article-header">

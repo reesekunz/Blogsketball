@@ -3,6 +3,8 @@ import "./teams.scss";
 import RaptorsLogo from "../../images/Raptors.png";
 import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
+import { NavLink } from "react-router-dom";
+import Kyle from "../../images/Kyle.jpeg";
 
 function Raptors() {
   return (
@@ -13,101 +15,82 @@ function Raptors() {
           <img src={RaptorsLogo} alt="Raptors logo" className="team-logo" />
         </div>
       </div>
-      <button onClick={Layout.ListLayout}>
-        <IoIosList size={40} />
+      <button onClick={Layout.PageReload}>
+        <IoIosList size={35} />
       </button>
       <button onClick={Layout.CardLayout}>
-        <IoIosBrowsers size={40} />
+        <IoIosBrowsers size={35} />
       </button>
       <div className="article-container">
         {/* Row 1  */}
         <div className="article-row">
+          <NavLink
+            to="/top-10-overrated"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Kyle} alt="Kyle Lowry" className="article-img" />
+              </div>
+              <h5 className="article-header">
+                Ranking the Top 10 Most Overrated Players
+              </h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img src={RaptorsLogo} alt="Raptors logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
-            </div>
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
           <div className="article-card">
             <img src={RaptorsLogo} alt="Raptors logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
-            </div>
-          </div>
-          <div className="article-card">
-            <img src={RaptorsLogo} alt="Raptors logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
-            </div>
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
         </div>
         {/* Row 2 */}
         <div className="article-row">
           <div className="article-card">
             <img src={RaptorsLogo} alt="Raptors logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
-            </div>
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
           <div className="article-card">
             <img src={RaptorsLogo} alt="Raptors logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
-            </div>
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
           <div className="article-card">
             <img src={RaptorsLogo} alt="Raptors logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
-            </div>
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
         </div>
         {/* Row 3 */}
         <div className="article-row">
           <div className="article-card">
             <img src={RaptorsLogo} alt="Raptors logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
-            </div>
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
           <div className="article-card">
             <img src={RaptorsLogo} alt="Raptors logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
-            </div>
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
           <div className="article-card">
             <img src={RaptorsLogo} alt="Raptors logo" className="article-img" />
-            <div className="article-header-wordz">
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-              <p>Article caption: blah blah blah blah</p>
-            </div>
+            <h5 className="article-header">
+              Article header: blah blah blah blah
+            </h5>
           </div>
         </div>
       </div>

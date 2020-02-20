@@ -45,6 +45,11 @@ import LegitContenders from "./articles/LegitContenders";
 import Redraft from "./articles/2019Redraft";
 import Top10NCAA from "./articles/Top10NCAA";
 import KenPom from "./articles/KenPom";
+import AllStarGame from "./articles/AllStarGame";
+import Underrated from "./articles/Underrated";
+import Overrated from "./articles/Overrated";
+import ClippersBench from "./articles/ClippersBench";
+import Bracketology from "./articles/Bracketology";
 function App() {
   return (
     <div className="App">
@@ -277,6 +282,11 @@ function App() {
       <Route path="/2019-redraft" component={Redraft} />
       <Route path="/top-10-ncaa" component={Top10NCAA} />
       <Route path="/kenpom-analysis" component={KenPom} />
+      <Route path="/2020-all-star-game" component={AllStarGame} />
+      <Route path="/top-10-underrated" component={Underrated} />
+      <Route path="/top-10-overrated" component={Overrated} />
+      <Route path="/clippers-are-loaded" component={ClippersBench} />
+      <Route path="/march-is-coming" component={Bracketology} />
     </div>
   );
 }

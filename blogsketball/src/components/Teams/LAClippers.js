@@ -5,6 +5,8 @@ import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
 import KobeChampionship from "../../images/KobeChampionship.jpeg";
 import { NavLink } from "react-router-dom";
+import Montrezl from "../../images/Montrezl.jpeg";
+import Lou from "../../images/Lou.jpeg";
 
 function Clippers() {
   return (
@@ -42,27 +44,36 @@ function Clippers() {
               </h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img
-              src={ClippersLogo}
-              alt="Clippers logo"
-              className="article-img"
-            />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img
-              src={ClippersLogo}
-              alt="Clippers logo"
-              className="article-img"
-            />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          <NavLink
+            to="/top-10-overrated"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Montrezl} alt="Montrezl" className="article-img" />
+              </div>
+              <h5 className="article-header">
+                Ranking the Top 10 Most Overrated Players
+              </h5>
+            </div>
+          </NavLink>
+          <NavLink
+            to="/clippers-are-loaded"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Lou} alt="Lou will" className="article-img" />
+              </div>
+              <h5 className="article-header">
+                Clippers Now Officially Have Deepest Team in the League{" "}
+              </h5>
+            </div>
+          </NavLink>
         </div>
+
         {/* Row 2 */}
         <div className="article-row">
           <div className="article-card">
