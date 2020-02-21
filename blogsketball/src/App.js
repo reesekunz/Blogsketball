@@ -1,13 +1,18 @@
 import React from "react";
 import "./App.scss";
-import Header from "./components/Header/Header";
 import { Route, NavLink } from "react-router-dom";
+
+// Components
+import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Betting from "./components/Betting/Betting";
 import PowerRankings from "./components/Power Rankings/PowerRankings";
 import Analysis from "./components/NewsAndAnalysis/NewsAndAnalysis";
 import NBADraft from "./components/NBADraft/NBADraft";
 import College from "./components/College/College";
+import Page2 from "./components/Home/Page2";
+import Page3 from "./components/Home/Page3";
+
 // Teams
 import Hawks from "./components/Teams/AtlantaHawks";
 import Celtics from "./components/Teams/BostonCeltics";
@@ -40,7 +45,7 @@ import Raptors from "./components/Teams/TorontoRaptors";
 import Jazz from "./components/Teams/UtahJazz";
 import Wizards from "./components/Teams/WashingtonWizards";
 import { IoIosArrowDown } from "react-icons/io";
-
+// Articles
 import LegitContenders from "./articles/LegitContenders";
 import Redraft from "./articles/2019Redraft";
 import Top10NCAA from "./articles/Top10NCAA";
@@ -50,6 +55,20 @@ import Underrated from "./articles/Underrated";
 import Overrated from "./articles/Overrated";
 import ClippersBench from "./articles/ClippersBench";
 import Bracketology from "./articles/Bracketology";
+import Top10CollegeCoaches from "./articles/Top10CollegeCoaches";
+import NBARank91to100 from "./articles/NBARank91-100";
+import NBARank81to90 from "./articles/NBARank81-90";
+import NBARank71to80 from "./articles/NBARank71-80";
+import NBARank61to70 from "./articles/NBARank61-70";
+import NBARank51to60 from "./articles/NBARank51-60";
+import NBARank41to50 from "./articles/NBARank41-50";
+import NBARank31to40 from "./articles/NBARank31-40";
+import NBARank21to30 from "./articles/NBARank21-30";
+import NBARank16to20 from "./articles/NBARank16-20";
+import NBARank11to15 from "./articles/NBARank11-15";
+import NBARank6to10 from "./articles/NBARank6-10";
+import NBARank1to5 from "./articles/NBARank1-5";
+
 function App() {
   return (
     <div className="App">
@@ -88,10 +107,10 @@ function App() {
                 Houston Rockets
               </NavLink>
               <NavLink to="/la-clippers" activeClassName="activeNavButton">
-                LA Clippers
+                Los Angeles Clippers
               </NavLink>
               <NavLink to="/la-lakers" activeClassName="activeNavButton">
-                LA Lakers
+                Los Angeles Lakers
               </NavLink>
               <NavLink
                 to="/memphis-grizzlies"
@@ -112,7 +131,7 @@ function App() {
                 New Orleans Pelicans{" "}
               </NavLink>
               <NavLink to="/okc-thunder" activeClassName="activeNavButton">
-                OKC Thunder
+                Oklahoma City Thunder
               </NavLink>
               <NavLink to="/phoenix-suns" activeClassName="activeNavButton">
                 Phoenix Suns
@@ -245,6 +264,8 @@ function App() {
       <Route path="/news-and-analysis" component={Analysis} />
       <Route path="/mens-ncaa" component={College} />
       <Route path="/nba-mock-draft" component={NBADraft} />
+      <Route path="/page-2" component={Page2} />
+      <Route path="/page-3" component={Page3} />
 
       <Route path="/atlanta-hawks" component={Hawks} />
       <Route path="/boston-celtics" component={Celtics} />
@@ -287,6 +308,19 @@ function App() {
       <Route path="/top-10-overrated" component={Overrated} />
       <Route path="/clippers-are-loaded" component={ClippersBench} />
       <Route path="/march-is-coming" component={Bracketology} />
+      <Route path="/top-10-college-coaches" component={Top10CollegeCoaches} />
+      <Route path="/nba-rank-91-100" component={NBARank91to100} />
+      <Route path="/nba-rank-81-90" component={NBARank81to90} />
+      <Route path="/nba-rank-71-80" component={NBARank71to80} />
+      <Route path="/nba-rank-61-70" component={NBARank61to70} />
+      <Route path="/nba-rank-51-60" component={NBARank51to60} />
+      <Route path="/nba-rank-41-50" component={NBARank41to50} />
+      <Route path="/nba-rank-31-40" component={NBARank31to40} />
+      <Route path="/nba-rank-21-30" component={NBARank21to30} />
+      <Route path="/nba-rank-16-20" component={NBARank16to20} />
+      <Route path="/nba-rank-11-15" component={NBARank11to15} />
+      <Route path="/nba-rank-6-10" component={NBARank6to10} />
+      <Route path="/nba-rank-1-5" component={NBARank1to5} />
     </div>
   );
 }

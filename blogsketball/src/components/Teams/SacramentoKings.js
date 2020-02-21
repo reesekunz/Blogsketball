@@ -6,7 +6,8 @@ import Layout from "../../helpers/Layout";
 import { NavLink } from "react-router-dom";
 import Buddy from "../../images/Buddy.jpeg";
 import Harrison from "../../images/Harrison.jpeg";
-
+import Bogdan from "../../images/Bogdan.jpeg";
+import Bagley from "../../images/Bagley.jpeg";
 function Kings() {
   return (
     <div className="team-container">
@@ -58,21 +59,39 @@ function Kings() {
               </h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={KingsLogo} alt="Kings logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 91-100 Article */}
+          <NavLink
+            to="/nba-rank-91-100"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Bogdan} alt="Bogdan" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 91-100</h5>
+            </div>
+          </NavLink>
         </div>
         {/* Row 2 */}
         <div className="article-row">
-          <div className="article-card">
-            <img src={KingsLogo} alt="Kings logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 81-90 Article */}
+          <NavLink
+            to="/nba-rank-81-90"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img
+                  src={Bagley}
+                  alt="Marvin Bagley III"
+                  className="article-img"
+                />
+              </div>
+              <h5 className="article-header">NBA Rank: 81-90</h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img src={KingsLogo} alt="Kings logo" className="article-img" />
             <h5 className="article-header">

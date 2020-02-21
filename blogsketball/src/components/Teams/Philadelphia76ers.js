@@ -5,6 +5,7 @@ import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
 import KobeChampionship from "../../images/KobeChampionship.jpeg";
 import { NavLink } from "react-router-dom";
+import Al from "../../images/Al.jpeg";
 
 function Sixers() {
   return (
@@ -42,12 +43,19 @@ function Sixers() {
               </h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={SixersLogo} alt="Sixers logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 81-90 Article */}
+          <NavLink
+            to="/nba-rank-81-90"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Al} alt="Al Horford" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 81-90</h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img src={SixersLogo} alt="Sixers logo" className="article-img" />
             <h5 className="article-header">

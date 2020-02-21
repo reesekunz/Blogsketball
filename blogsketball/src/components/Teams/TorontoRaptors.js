@@ -5,7 +5,8 @@ import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
 import { NavLink } from "react-router-dom";
 import Kyle from "../../images/Kyle.jpeg";
-
+import Fred from "../../images/Fred.jpeg";
+import Serge from "../../images/Serge.jpeg";
 function Raptors() {
   return (
     <div className="team-container">
@@ -38,18 +39,32 @@ function Raptors() {
               </h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={RaptorsLogo} alt="Raptors logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={RaptorsLogo} alt="Raptors logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 81-90 Article */}
+          <NavLink
+            to="/nba-rank-81-90"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Fred} alt="Fred" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 81-90</h5>
+            </div>
+          </NavLink>
+          {/* NBA Rank 71-80 Article */}
+          <NavLink
+            to="/nba-rank-71-80"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Serge} alt="Serge Ibaka" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 71-80</h5>
+            </div>
+          </NavLink>
         </div>
         {/* Row 2 */}
         <div className="article-row">

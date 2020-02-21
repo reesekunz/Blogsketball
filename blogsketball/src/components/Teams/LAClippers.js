@@ -7,6 +7,7 @@ import KobeChampionship from "../../images/KobeChampionship.jpeg";
 import { NavLink } from "react-router-dom";
 import Montrezl from "../../images/Montrezl.jpeg";
 import Lou from "../../images/Lou.jpeg";
+import Harrell from "../../images/Harrell.jpeg";
 
 function Clippers() {
   return (
@@ -76,16 +77,19 @@ function Clippers() {
 
         {/* Row 2 */}
         <div className="article-row">
-          <div className="article-card">
-            <img
-              src={ClippersLogo}
-              alt="Clippers logo"
-              className="article-img"
-            />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 81-90 Article */}
+          <NavLink
+            to="/nba-rank-81-90"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Harrell} alt="Montrezl" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 81-90</h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img
               src={ClippersLogo}

@@ -5,6 +5,8 @@ import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
 import KobeChampionship from "../../images/KobeChampionship.jpeg";
 import { NavLink } from "react-router-dom";
+import RoCo from "../../images/RoCo.jpeg";
+import PJ from "../../images/PJ.jpeg";
 
 function Rockets() {
   return (
@@ -24,6 +26,7 @@ function Rockets() {
       <div className="article-container">
         {/* Row 1  */}
         <div className="article-row">
+          {/* Legit Title Contenders Article */}
           <NavLink
             to="/legit-contenders"
             activeClassName="activeNavButton"
@@ -42,12 +45,32 @@ function Rockets() {
               </h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={RocketsLogo} alt="Rockets logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 91-100 Article */}
+          <NavLink
+            to="/nba-rank-91-100"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={RoCo} alt="RoCo" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 91-100</h5>
+            </div>
+          </NavLink>
+          {/* NBA Rank 71-80 Article */}
+          <NavLink
+            to="/nba-rank-71-80"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={PJ} alt="PJ Tucker" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 71-80</h5>
+            </div>
+          </NavLink>
         </div>
         {/* Row 2 */}
         <div className="article-row">

@@ -5,6 +5,7 @@ import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
 import { NavLink } from "react-router-dom";
 import Zion from "../../images/Zion.jpeg";
+import Jonas from "../../images/Jonas.jpeg";
 
 function Grizzlies() {
   return (
@@ -34,16 +35,23 @@ function Grizzlies() {
               <h5 className="article-header">2019 Lottery Re-Draft</h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img
-              src={GrizzliesLogo}
-              alt="Grizzlies logo"
-              className="article-img"
-            />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 81-90 Article */}
+          <NavLink
+            to="/nba-rank-81-90"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img
+                  src={Jonas}
+                  alt="My name is Jonas"
+                  className="article-img"
+                />
+              </div>
+              <h5 className="article-header">NBA Rank: 81-90</h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img
               src={GrizzliesLogo}

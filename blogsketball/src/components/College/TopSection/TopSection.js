@@ -5,6 +5,7 @@ import BlogsketballIMG from "../../../images/Blogsketball.png";
 import Baylor from "../../../images/Baylor.jpeg";
 import CutNet from "../../../images/CutNet.jpeg";
 import Bracket from "../../../images/Bracketology.png";
+import Jay from "../../../images/Jay.jpeg";
 
 function TopSection() {
   return (
@@ -76,19 +77,18 @@ function TopSection() {
               <div className="article-header">Third article</div>
             </NavLink>
           </div>
-          {/* Fifth article  */}
+          {/* Top 10 College Coaches */}
           <div className="section-1-second-img">
             <NavLink
-              to="/where-are-they-now"
+              to="/top-10-college-coaches"
               activeClassName="activeNavButton"
               className="article-link"
             >
-              <img
-                className="second-img"
-                src={BlogsketballIMG}
-                alt="Where are they now"
-              />
-              <div className="article-header">Second Article</div>
+              <img className="second-img" src={Jay} alt="Jay Wright" />
+              <div className="article-header">
+                {" "}
+                Ranking the Top-10 Coaches in Men's College Basketball
+              </div>
             </NavLink>
           </div>
         </div>

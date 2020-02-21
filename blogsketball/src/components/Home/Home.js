@@ -245,6 +245,13 @@ function Home() {
           </div>
         </div>
       </div>
+      <NavLink
+        to="/page-2"
+        activeClassName="activeNavButton"
+        className="home-article-link"
+      >
+        <button>Next Page</button>
+      </NavLink>
     </div>
   );
 }
