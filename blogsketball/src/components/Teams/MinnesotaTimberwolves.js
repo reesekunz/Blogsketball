@@ -6,7 +6,8 @@ import Layout from "../../helpers/Layout";
 import { NavLink } from "react-router-dom";
 import Zion from "../../images/Zion.jpeg";
 import Malik from "../../images/Malik.jpeg";
-
+import DLO from "../../images/DLO.jpeg";
+import Towns from "../../images/Towns.jpeg";
 function TWolves() {
   return (
     <div className="team-container">
@@ -50,21 +51,35 @@ function TWolves() {
               </h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={TWolvesLogo} alt="TWolves logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 31-40 Article */}
+          <NavLink
+            to="/nba-rank-31-40"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={DLO} alt="DLO" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 31-40</h5>
+            </div>
+          </NavLink>
         </div>
         {/* Row 2 */}
         <div className="article-row">
-          <div className="article-card">
-            <img src={TWolvesLogo} alt="TWolves logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 11-15 Article */}
+          <NavLink
+            to="/nba-rank-11-15"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Towns} alt="KAT" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 11-15</h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img src={TWolvesLogo} alt="TWolves logo" className="article-img" />
             <h5 className="article-header">

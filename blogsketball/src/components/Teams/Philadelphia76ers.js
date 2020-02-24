@@ -6,7 +6,9 @@ import Layout from "../../helpers/Layout";
 import KobeChampionship from "../../images/KobeChampionship.jpeg";
 import { NavLink } from "react-router-dom";
 import Al from "../../images/Al.jpeg";
-
+import Tobias from "../../images/Tobias.jpeg";
+import Ben from "../../images/Ben.jpeg";
+import Embiid from "../../images/Embiid.jpeg";
 function Sixers() {
   return (
     <div className="team-container">
@@ -56,27 +58,48 @@ function Sixers() {
               <h5 className="article-header">NBA Rank: 81-90</h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={SixersLogo} alt="Sixers logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 61-70 Article */}
+          <NavLink
+            to="/nba-rank-61-70"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Tobias} alt="Tobias Harris" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 61-70</h5>
+            </div>
+          </NavLink>
         </div>
         {/* Row 2 */}
         <div className="article-row">
-          <div className="article-card">
-            <img src={SixersLogo} alt="Sixers logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={SixersLogo} alt="Sixers logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 16-20 Article */}
+          <NavLink
+            to="/nba-rank-16-20"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Ben} alt="Ben" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 16-20</h5>
+            </div>
+          </NavLink>
+          {/* NBA Rank 11-15 Article */}
+          <NavLink
+            to="/nba-rank-11-15"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Embiid} alt="Embiid" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 11-15</h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img src={SixersLogo} alt="Sixers logo" className="article-img" />
             <h5 className="article-header">

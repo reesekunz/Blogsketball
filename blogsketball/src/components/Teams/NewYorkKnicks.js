@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 import Zion from "../../images/Zion.jpeg";
 import Julius from "../../images/Julius.jpeg";
 import Robinson from "../../images/Robinson.jpeg";
+import Randle from "../../images/Randle.jpeg";
 
 function Knicks() {
   return (
@@ -70,12 +71,19 @@ function Knicks() {
         </div>
         {/* Row 2 */}
         <div className="article-row">
-          <div className="article-card">
-            <img src={KnicksLogo} alt="Knicks logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 61-70 Article */}
+          <NavLink
+            to="/nba-rank-61-70"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Randle} alt="Julius Randle" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 61-70</h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img src={KnicksLogo} alt="Knicks logo" className="article-img" />
             <h5 className="article-header">

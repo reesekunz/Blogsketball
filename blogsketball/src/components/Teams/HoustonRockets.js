@@ -7,7 +7,8 @@ import KobeChampionship from "../../images/KobeChampionship.jpeg";
 import { NavLink } from "react-router-dom";
 import RoCo from "../../images/RoCo.jpeg";
 import PJ from "../../images/PJ.jpeg";
-
+import Westbrook from "../../images/Westbrook.jpeg";
+import Harden from "../../images/Harden.jpeg";
 function Rockets() {
   return (
     <div className="team-container">
@@ -74,18 +75,32 @@ function Rockets() {
         </div>
         {/* Row 2 */}
         <div className="article-row">
-          <div className="article-card">
-            <img src={RocketsLogo} alt="Rockets logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={RocketsLogo} alt="Rockets logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 11-15 Article */}
+          <NavLink
+            to="/nba-rank-11-15"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Westbrook} alt="Westbrook" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 11-15</h5>
+            </div>
+          </NavLink>
+          {/* NBA Rank 1-5 Article */}
+          <NavLink
+            to="/nba-rank-1-5"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Harden} alt="Harden" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 1-5</h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img src={RocketsLogo} alt="Rockets logo" className="article-img" />
             <h5 className="article-header">

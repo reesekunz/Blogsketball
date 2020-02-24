@@ -6,6 +6,7 @@ import Layout from "../../helpers/Layout";
 import { NavLink } from "react-router-dom";
 import Evan from "../../images/Evan.jpeg";
 import Isaac from "../../images/Isaac.jpeg";
+import Vuc from "../../images/Vuc.jpeg";
 function Magic() {
   return (
     <div className="team-container">
@@ -50,12 +51,19 @@ function Magic() {
               <h5 className="article-header">NBA Rank: 81-90</h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={MagicLogo} alt="Magic logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 41-50 Article */}
+          <NavLink
+            to="/nba-rank-41-50"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Vuc} alt="Vuc" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 41-50</h5>
+            </div>
+          </NavLink>
         </div>
         {/* Row 2 */}
         <div className="article-row">

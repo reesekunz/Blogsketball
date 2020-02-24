@@ -7,6 +7,9 @@ import { NavLink } from "react-router-dom";
 import Joe from "../../images/Joe.jpeg";
 import Jordan from "../../images/Jordan.jpeg";
 import Conley from "../../images/Conley.jpeg";
+import Ingles from "../../images/Ingles.jpeg";
+import Bojan from "../../images/Bojan.jpeg";
+import Rudy from "../../images/Rudy.jpeg";
 function Jazz() {
   return (
     <div className="team-container">
@@ -77,24 +80,45 @@ function Jazz() {
         </div>
         {/* Row 2 */}
         <div className="article-row">
-          <div className="article-card">
-            <img src={JazzLogo} alt="Jazz logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={JazzLogo} alt="Jazz logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={JazzLogo} alt="Jazz logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 61-70 Article */}
+          <NavLink
+            to="/nba-rank-61-70"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Ingles} alt="Joe Ingles" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 61-70</h5>
+            </div>
+          </NavLink>
+          {/* NBA Rank 51-60 Article */}
+          <NavLink
+            to="/nba-rank-51-60"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Bojan} alt="Bojan" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 51-60</h5>
+            </div>
+          </NavLink>
+          {/* NBA Rank 21-30 Article */}
+          <NavLink
+            to="/nba-rank-21-30"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Rudy} alt="Rudy Gobert" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 21-30</h5>
+            </div>
+          </NavLink>
         </div>
         {/* Row 3 */}
         <div className="article-row">

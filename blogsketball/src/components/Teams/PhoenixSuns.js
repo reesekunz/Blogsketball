@@ -5,8 +5,11 @@ import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
 import { NavLink } from "react-router-dom";
 import Zion from "../../images/Zion.jpeg";
-import Mikal from "../../images/Mikal.jpeg"
-
+import Mikal from "../../images/Mikal.jpeg";
+import Ricky from "../../images/Ricky.jpeg";
+// import Kelly from "../../images/Kelly.jpeg";
+import Ayton from "../../images/Ayton.jpeg";
+import Booker from "../../images/Booker.jpeg";
 function Suns() {
   return (
     <div className="team-container">
@@ -35,8 +38,8 @@ function Suns() {
               <h5 className="article-header">2019 Lottery Re-Draft</h5>
             </div>
           </NavLink>
-         {/* Top 10 underrated article */}
-         <NavLink
+          {/* Top 10 underrated article */}
+          <NavLink
             to="/top-10-underrated"
             activeClassName="activeNavButton"
             className="team-link"
@@ -49,27 +52,48 @@ function Suns() {
               </h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={SunsLogo} alt="Suns logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 61-70 Article */}
+          <NavLink
+            to="/nba-rank-61-70"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Ricky} alt="Ricky" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 61-70</h5>
+            </div>
+          </NavLink>
         </div>
         {/* Row 2 */}
         <div className="article-row">
-          <div className="article-card">
-            <img src={SunsLogo} alt="Suns logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={SunsLogo} alt="Suns logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 31-40 Article */}
+          <NavLink
+            to="/nba-rank-31-40"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Ayton} alt="Ayton" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 31-40</h5>
+            </div>
+          </NavLink>
+          {/* NBA Rank 21-30 Article */}
+          <NavLink
+            to="/nba-rank-21-30"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Booker} alt="Devin Booker" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 21-30</h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img src={SunsLogo} alt="Suns logo" className="article-img" />
             <h5 className="article-header">

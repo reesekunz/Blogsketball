@@ -8,6 +8,8 @@ import Buddy from "../../images/Buddy.jpeg";
 import Harrison from "../../images/Harrison.jpeg";
 import Bogdan from "../../images/Bogdan.jpeg";
 import Bagley from "../../images/Bagley.jpeg";
+import Hield from "../../images/Hield.jpeg";
+import Fox from "../../images/Fox.jpeg";
 function Kings() {
   return (
     <div className="team-container">
@@ -92,18 +94,32 @@ function Kings() {
               <h5 className="article-header">NBA Rank: 81-90</h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={KingsLogo} alt="Kings logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={KingsLogo} alt="Kings logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 51-60 Article */}
+          <NavLink
+            to="/nba-rank-51-60"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Hield} alt="Buddy Hield" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 51-60</h5>
+            </div>
+          </NavLink>
+          {/* NBA Rank 41-50 Article */}
+          <NavLink
+            to="/nba-rank-41-50"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Fox} alt="Swipa the Fox" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 41-50</h5>
+            </div>
+          </NavLink>
         </div>
         {/* Row 3 */}
         <div className="article-row">

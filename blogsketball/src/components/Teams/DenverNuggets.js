@@ -8,6 +8,8 @@ import Monte from "../../images/Monte.jpeg";
 import Gary from "../../images/Gary.jpeg";
 import MPJ from "../../images/MPJ.jpeg";
 import Paul from "../../images/Paul.jpeg";
+import Jamal from "../../images/Jamal.jpeg";
+import Jokic from "../../images/Jokic.jpeg";
 function Nuggets() {
   return (
     <div className="team-container">
@@ -85,18 +87,32 @@ function Nuggets() {
               <h5 className="article-header">NBA Rank: 71-80</h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={NuggetsLogo} alt="Nuggets logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={NuggetsLogo} alt="Nuggets logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 41-50 Article */}
+          <NavLink
+            to="/nba-rank-41-50"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Jamal} alt="Jamal Murray" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 41-50</h5>
+            </div>
+          </NavLink>
+          {/* NBA Rank 6-10 Article */}
+          <NavLink
+            to="/nba-rank-6-10"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Jokic} alt="Jokic" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 6-10</h5>
+            </div>
+          </NavLink>
         </div>
         {/* Row 3 */}
         <div className="article-row">

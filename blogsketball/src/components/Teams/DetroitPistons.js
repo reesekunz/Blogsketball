@@ -5,6 +5,8 @@ import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
 import { NavLink } from "react-router-dom";
 import Blake from "../../images/Blake.jpeg";
+import DRose from "../../images/DRose.jpeg";
+
 function Pistons() {
   return (
     <div className="team-container">
@@ -36,12 +38,19 @@ function Pistons() {
               <h5 className="article-header">NBA Rank: 71-80</h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={PistonsLogo} alt="Pistons logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 51-60 Article */}
+          <NavLink
+            to="/nba-rank-51-60"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={DRose} alt="D-Rose" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 51-60</h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img src={PistonsLogo} alt="Pistons logo" className="article-img" />
             <h5 className="article-header">

@@ -6,6 +6,8 @@ import Layout from "../../helpers/Layout";
 import KobeChampionship from "../../images/KobeChampionship.jpeg";
 import { NavLink } from "react-router-dom";
 import Rajon from "../../images/Rajon.jpeg";
+import AD from "../../images/AD.jpeg";
+import Lebron from "../../images/Lebron.jpeg";
 function Lakers() {
   return (
     <div className="team-container">
@@ -56,27 +58,35 @@ function Lakers() {
               </h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <div className="article-img-container">
-              <img src={LakersLogo} alt="Lakers logo" className="article-img" />
+          {/* NBA Rank 6-10 Article */}
+          <NavLink
+            to="/nba-rank-6-10"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={AD} alt="AD" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 6-10</h5>
             </div>
-
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          </NavLink>
         </div>
         {/* Row 2 */}
         <div className="article-row">
-          <div className="article-card">
-            <div className="article-img-container">
-              <img src={LakersLogo} alt="Lakers logo" className="article-img" />
+          {/* NBA Rank 1-5 Article */}
+          <NavLink
+            to="/nba-rank-1-5"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Lebron} alt="Lebron" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 1-5</h5>
             </div>
-
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          </NavLink>
           <div className="article-card">
             <div className="article-img-container">
               <img src={LakersLogo} alt="Lakers logo" className="article-img" />

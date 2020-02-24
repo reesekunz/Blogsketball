@@ -7,6 +7,8 @@ import { NavLink } from "react-router-dom";
 import Zion from "../../images/Zion.jpeg";
 import Jae from "../../images/Jae.jpeg";
 import Dragic from "../../images/Dragic.jpeg";
+import Bam from "../../images/Bam.jpeg";
+import Jimmy from "../../images/Jimmy.jpeg";
 function Heat() {
   return (
     <div className="team-container">
@@ -65,18 +67,32 @@ function Heat() {
         </div>
         {/* Row 2 */}
         <div className="article-row">
-          <div className="article-card">
-            <img src={HeatLogo} alt="Heat logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={HeatLogo} alt="Heat logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 21-30 Article */}
+          <NavLink
+            to="/nba-rank-21-30"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Bam} alt="Bam Bam" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 21-30</h5>
+            </div>
+          </NavLink>
+          {/* NBA Rank 16-20 Article */}
+          <NavLink
+            to="/nba-rank-16-20"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Jimmy} alt="Jimmy Butler" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 16-20</h5>
+            </div>
+          </NavLink>
           <div className="article-card">
             <img src={HeatLogo} alt="Heat logo" className="article-img" />
             <h5 className="article-header">

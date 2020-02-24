@@ -6,7 +6,8 @@ import Layout from "../../helpers/Layout";
 import { NavLink } from "react-router-dom";
 import Zion from "../../images/Zion.jpeg";
 import Collin from "../../images/Collin.jpeg";
-
+import Andre from "../../images/Andre.jpeg";
+// import KLove from "../../images/KLove.jpeg";
 function Cavs() {
   return (
     <div className="team-container">
@@ -49,12 +50,19 @@ function Cavs() {
               </h5>
             </div>
           </NavLink>
-          <div className="article-card">
-            <img src={CavsLogo} alt="Cavs logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
+          {/* NBA Rank 31-40 Article */}
+          <NavLink
+            to="/nba-rank-31-40"
+            activeClassName="activeNavButton"
+            className="team-link"
+          >
+            <div className="article-card">
+              <div className="article-img-container">
+                <img src={Andre} alt="Andre Drummond" className="article-img" />
+              </div>
+              <h5 className="article-header">NBA Rank: 31-40</h5>
+            </div>
+          </NavLink>
         </div>
         {/* Row 2 */}
         <div className="article-row">
