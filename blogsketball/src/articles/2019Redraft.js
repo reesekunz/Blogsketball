@@ -5,7 +5,7 @@ import Zion from "../images/Zion.jpeg";
 function LotteryRedraft() {
   return (
     <div className="article-container">
-      <h3 className="article-header">2019 Lottery Re-Draft</h3>
+      <h3 className="article-header">Re-drating the 2019 Lottery</h3>
       <div className="article-header-img-container">
         <img className="article-header-img" src={Zion} alt="zion williamson" />
         <div className="article-caption">

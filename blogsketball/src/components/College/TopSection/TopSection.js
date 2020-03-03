@@ -36,12 +36,16 @@ function TopSection() {
           {/* Second article  */}
           <div className="section-1-third-img">
             <NavLink
-              to="march-is-coming"
+              to="/marky-is-killing-it"
               activeClassName="activeNavButton"
               className="article-link"
             >
-              <img className="third-img" src={Bracket} alt="Bracketology" />
-              <div className="article-header">March is Coming</div>
+              <img
+                className="third-img"
+                src={BlogsketballIMG}
+                alt="Marky Dubios"
+              />
+              <div className="article-header">Third article</div>
             </NavLink>
           </div>
         </div>

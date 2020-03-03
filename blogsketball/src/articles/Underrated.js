@@ -5,7 +5,9 @@ import Mikal from "../images/Mikal.jpeg";
 function Underrated() {
   return (
     <div className="article-container">
-      <h3 className="article-header">Ranking the Top 10 Most Underrated Players</h3>
+      <h3 className="article-header">
+        Ranking the Top 10 Most Underrated Players
+      </h3>
       <div className="article-header-img-container">
         <img className="article-header-img" src={Mikal} alt="mikal bridges" />
         <div className="article-caption">Mikal Bridges</div>
@@ -17,7 +19,7 @@ function Underrated() {
         <p>Stats: 8.5 PPG, 3.6 AST, 1.8 REB, 45.9 FG%, 40.2 3PT%, 80.0 FT%</p>
         <p>
           Monte Morris is constantly atop the league in assist-to-turnover ratio
-          (currently in 1st with a 5.5 ratio). He takes care of the ball and
+          (currently in first with a 5.5 ratio). He takes care of the ball and
           shoots three pointers at a 40% rate. Morris is the ideal playmaker you
           want coming off the bench that literally never gets talked about.
         </p>

@@ -191,25 +191,7 @@ function Home() {
               </div>
             </div>
           </NavLink>
-          {/* Clippers Bench article */}
-          <NavLink
-            to="/march-is-coming"
-            activeClassName="activeNavButton"
-            className="home-article-link"
-          >
-            <div className="article">
-              <img
-                src={Bracket}
-                className="latest-articles-img"
-                alt="Bracketology"
-              />
-              <div className="article-content">
-                <p className="article-date">Feb. 20 2020</p>
-                <h3 className="latest-article-header">March is Coming </h3>
-                <div className="article-tag">Tags: NCAA</div>
-              </div>
-            </div>
-          </NavLink>
+       
         </div>
         <div className="side-bar">
           <div className="side-bar-wrapper">

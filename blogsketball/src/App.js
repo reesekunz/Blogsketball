@@ -3,8 +3,9 @@ import "./App.scss";
 import { Route, NavLink } from "react-router-dom";
 
 // Components
+import NewHome from "./components/Home/NewHome";
 import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
+// import Home from "./components/Home/Home";
 import Betting from "./components/Betting/Betting";
 import PowerRankings from "./components/Power Rankings/PowerRankings";
 import Analysis from "./components/NewsAndAnalysis/NewsAndAnalysis";
@@ -54,7 +55,6 @@ import AllStarGame from "./articles/AllStarGame";
 import Underrated from "./articles/Underrated";
 import Overrated from "./articles/Overrated";
 import ClippersBench from "./articles/ClippersBench";
-import Bracketology from "./articles/Bracketology";
 import Top10CollegeCoaches from "./articles/Top10CollegeCoaches";
 import NBARank91to100 from "./articles/NBARank91-100";
 import NBARank81to90 from "./articles/NBARank81-90";
@@ -258,7 +258,7 @@ function App() {
         </div>
       </div>
       {/* Routes  */}
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={NewHome} />
       <Route path="/betting" component={Betting} />
       <Route path="/power-rankings" component={PowerRankings} />
       <Route path="/news-and-analysis" component={Analysis} />
@@ -307,7 +307,6 @@ function App() {
       <Route path="/top-10-underrated" component={Underrated} />
       <Route path="/top-10-overrated" component={Overrated} />
       <Route path="/clippers-are-loaded" component={ClippersBench} />
-      <Route path="/march-is-coming" component={Bracketology} />
       <Route path="/top-10-college-coaches" component={Top10CollegeCoaches} />
       <Route path="/nba-rank-91-100" component={NBARank91to100} />
       <Route path="/nba-rank-81-90" component={NBARank81to90} />
