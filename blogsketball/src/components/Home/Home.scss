@@ -1,154 +1,488 @@
-.home-container {
+.home {
   margin-left: 15%;
   margin-right: 15%;
-  display: flex;
-  justify-content: space-evenly;
   font-family: "Cinzel", serif;
-
-  .column1 {
-    // padding-top: 5px;
-    margin-top: 30px;
-    border-right: 1px solid gray;
+  .home-container {
     display: flex;
-    flex-direction: column;
-    width: 40%;
-    padding-right: 20px;
-    color: black;
-    .home-article-link {
-      text-decoration: none;
-    }
-    .main-article-container {
-      color: black;
-
-      .main-article-img {
-        width: 100%;
-      }
-      .article-date {
-        margin-top: 20px;
-        color: black;
-        border-bottom: 1px solid lightgray;
-      }
-      .article-header {
-        font-size: 30px;
-      }
-    }
-    .second-article-container {
+    justify-content: space-evenly;
+    // border-bottom: 1px solid gray;
+    padding-bottom: 50px;
+    .column1 {
+      // padding-top: 5px;
       margin-top: 30px;
-      border-top: 1px solid gray;
-      padding-top: 30px;
+      border-right: 1px solid gray;
       display: flex;
+      flex-direction: column;
+      width: 33.3%;
+      padding-right: 20px;
       color: black;
-      .second-article-text {
-        display: flex;
-        flex-direction: column;
+      .home-article-link {
+        text-decoration: none;
+      }
+      .main-article-container {
+        color: black;
 
-        padding-right: 5%;
-        width: 55%;
+        .main-article-img {
+          width: 100%;
+          height: 250px;
+        }
         .article-date {
+          margin-top: 20px;
+          color: black;
           border-bottom: 1px solid lightgray;
         }
+        .article-header {
+          font-size: 30px;
+        }
+        .article-header:hover {
+          color: purple;
+        }
       }
-      .second-article-img {
-        width: 45%;
-        height: 175px;
-        // padding-top: 5%;
+      .second-article-container {
+        margin-top: 30px;
+        border-top: 1px solid gray;
+        padding-top: 30px;
+        display: flex;
+        color: black;
+        .second-article-text {
+          display: flex;
+          flex-direction: column;
+
+          padding-right: 5%;
+          width: 55%;
+          .article-date {
+            border-bottom: 1px solid lightgray;
+          }
+        }
+        .second-article-img {
+          width: 45%;
+          height: 175px;
+          // padding-top: 5%;
+        }
+        .article-header {
+          font-size: 25px;
+        }
+        .article-header:hover {
+          color: purple;
+        }
       }
-      .article-header {
-        font-size: 25px;
+    }
+    .column2 {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      width: 33.3%;
+      padding-left: 1%;
+      padding-right: 1%;
+      .column2-img-container {
+        // padding-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .column2-img {
+          width: 100%;
+          height: 200px;
+        }
+      }
+      .home-article-link {
+        text-decoration: none;
+      }
+      .column2-content {
+        color: black;
+        text-decoration: none;
+        .article-date {
+          margin-top: 20px;
+          color: black;
+          border-bottom: 1px solid lightgray;
+        }
+        .article-header {
+          font-size: 25px;
+        }
+        .article-header:hover {
+          color: purple;
+        }
+        .article-text {
+          border-bottom: 1px solid gray;
+          padding-bottom: 20px;
+        }
+      }
+    }
+    .column3 {
+      border-left: 1px solid gray;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      width: 33.3%;
+      padding-left: 1%;
+      .home-article-link {
+        text-decoration: none;
+        color: black;
+      }
+      .latest-articles-header {
+        margin-top: 10px;
+        font-size: 18px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 1%;
+        // margin-bottom: 5%;
+      }
+      .articles-list {
+        text-decoration: none;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 50px;
+        li {
+          text-decoration: none;
+          // border-bottom: 1px solid lightgray;
+          border-top: 1px solid lightgray;
+          padding-top: 2.25%;
+          padding-bottom: 2.25%;
+          margin: 0;
+          line-height: 1.4;
+        }
+        li:hover {
+          color: purple;
+        }
+      }
+      .view-history-btn {
+        border: 1px solid black;
+        width: 125px;
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        background-color: #29005d;
+        padding: 1%;
+        margin-bottom: 60px;
+        .btn-link {
+          color: white;
+          text-decoration: none;
+        }
+      }
+      .view-history-btn:hover {
+        box-shadow: 1px 1px 1px black;
+      }
+      .icons {
+        margin-bottom: 60px;
+        .icon {
+          display: flex;
+          align-items: center;
+          .social-media-icon {
+            margin-right: 5px;
+          }
+        }
+      }
+      .other-sites {
+        .other-sites-img {
+          height: 60px;
+          width: 90px;
+          box-shadow: 1px 2px 1px black;
+          border-radius: 10%;
+        }
+        .other-sites-img:hover {
+          box-shadow: 1px 2px 3px black;
+        }
       }
     }
   }
-  .column2 {
-    margin-top: 30px;
+  .nba-rank-container {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    .section-header {
+      margin-top: 20px;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+  }
+  .section-header-container {
     display: flex;
-    flex-direction: column;
-    width: 30%;
-    padding-left: 1%;
-    padding-right: 1%;
-    .column2-img-container {
-      // padding-top: 5px;
+    align-items: center;
+    .section-header {
+      margin-top: 20px;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    .view-all-link {
+      text-decoration: none;
+      margin-left: auto;
+      color: purple;
+    }
+    .view-all-link:hover {
+      text-decoration: underline;
+    }
+  }
+  .col-container {
+    margin-top: 50px;
+    display: flex;
+    height: 675px;
+    border-bottom: 1px solid gray;
+    .col1 {
+      padding-right: 20px;
+      width: 33.3%;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      .column2-img {
+      flex-direction: column;
+      border-right: 1px solid gray;
+      .main-article-img {
         width: 100%;
-        height: 200px;
+        height: 250px;
       }
-    }
-    .home-article-link {
-      text-decoration: none;
-    }
-    .column2-content {
-      color: black;
-      text-decoration: none;
-      .article-date {
+      .date-written {
         margin-top: 20px;
         color: black;
         border-bottom: 1px solid lightgray;
       }
-      .article-header {
+      .home-article-link {
+        text-decoration: none;
+        color: black;
         font-size: 25px;
       }
-      .article-text {
-        border-bottom: 1px solid gray;
+      .home-article-link:hover {
+        color: purple;
+      }
+      .text {
+        margin-top: 0;
+      }
+    }
+    .col2 {
+      width: 33.3%;
+      display: flex;
+      flex-direction: column;
+      .top {
+        height: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-bottom: 20px;
+        border-bottom: 1px solid gray;
+        .secondary-article-img {
+          width: 100%;
+          height: 150px;
+        }
+        .date-written {
+          margin-top: 20px;
+          color: black;
+          border-bottom: 1px solid lightgray;
+        }
+        .home-article-link {
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+        }
+        .home-article-link:hover {
+          color: purple;
+        }
+      }
+      .bottom {
+        height: 50%;
+        padding: 20px 20px 20px 20px;
+        .secondary-article-img {
+          width: 100%;
+          height: 150px;
+        }
+        .date-written {
+          margin-top: 20px;
+          color: black;
+          border-bottom: 1px solid lightgray;
+        }
+        .home-article-link {
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+        }
+        .home-article-link:hover {
+          color: purple;
+        }
+      }
+    }
+    .col3 {
+      border: 1px solid green;
+      width: 33.3%;
+      display: flex;
+      flex-direction: column;
+      .top {
+        height: 50%;
+        border: 1px solid black;
+      }
+      .bottom {
+        height: 50%;
+        border: 1px solid black;
       }
     }
   }
-  .column3 {
-    border-left: 1px solid gray;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    padding-left: 1%;
-    .home-article-link {
-      text-decoration: none;
-      color: black;
-    }
-    .latest-articles-header {
-      margin-top: 0px;
-      font-size: 18px;
-      border-bottom: 1px solid gray;
-      padding-bottom: 1%;
-      // margin-bottom: 5%;
-    }
-    .articles-list {
-      text-decoration: none;
-      margin: 0;
-      width: 100%;
-      margin-bottom: 10%;
-      li {
-        text-decoration: none;
-        // border-bottom: 1px solid lightgray;
-        border-top: 1px solid lightgray;
-        padding-top: 2.25%;
-        padding-bottom: 2.25%;
-        margin: 0;
-        line-height: 1.4;
+  // Fantasy Section
+  .small-section-container {
+    height: 500px;
+    border-bottom: 1px solid gray;
+    .section-header-container {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      .section-header {
+        margin-top: 10px;
+        font-size: 25px;
+        margin-bottom: 10px;
       }
-      li:hover {
+      .view-all-link {
+        text-decoration: none;
+        margin-left: auto;
         color: purple;
       }
-    }
-    .view-history-btn {
-      border: 1px solid black;
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      margin-top: 4%;
-      background-color: #29005d;
-      padding: 1%;
-      // border-radius: 50%;
-      margin-bottom: 10%;
-      .btn-link {
-        color: white;
-        text-decoration: none;
+      .view-all-link:hover {
+        text-decoration: underline;
       }
     }
-    .view-history-btn:hover {
-      box-shadow: 1px 2px 3px black;
+    .small-section-card-wrapper {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      .small-section-card {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 25%;
+        height: 300px;
+        border-left: 1px solid gray;
+        .card-img {
+          width: 100%;
+          height: 60%;
+        }
+        .date-written {
+          margin-top: 10px;
+          border-bottom: 1px solid lightgray;
+          font-size: 12px;
+        }
+        .home-article-link {
+          text-decoration: none;
+          color: black;
+          font-size: 16px;
+        }
+        .home-article-link:hover {
+          color: purple;
+        }
+      }
+      .small-section-card-left {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 25%;
+        height: 300px;
+
+        .card-img {
+          width: 100%;
+          height: 60%;
+        }
+        .date-written {
+          margin-top: 10px;
+          border-bottom: 1px solid lightgray;
+          font-size: 12px;
+        }
+        .home-article-link {
+          text-decoration: none;
+          color: black;
+          font-size: 16px;
+        }
+        .home-article-link:hover {
+          color: purple;
+        }
+      }
+    }
+  }
+  // Game Breakdowns Section
+  .game-breakdowns-container {
+    border-bottom: 1px solid gray;
+    .row-wrapper {
+      margin-top: 50px;
+      .row {
+        display: flex;
+        justify-content: space-evenly;
+        .game-card {
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-bottom: 10px;
+          height: 200px;
+          width: 25%;
+          margin-bottom: 20px;
+          // box-shadow: 1px 1px 5px black;
+
+          .date-written {
+            margin-top: 10px;
+            border-bottom: 1px solid lightgray;
+            font-size: 12px;
+          }
+          .home-article-link {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+          }
+          .home-article-link:hover {
+            color: purple;
+          }
+        }
+        .game-card:hover {
+          box-shadow: 1px 1px 10px black;
+        }
+      }
+    }
+  }
+  // Player Spotlight Section
+  .player-spotlight-container {
+    border-bottom: 1px solid gray;
+
+    .section-header-container {
+      display: flex;
+      align-items: center;
+      .section-header {
+        margin-top: 20px;
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+      .view-all-link {
+        text-decoration: none;
+        margin-left: auto;
+        color: purple;
+      }
+      .view-all-link:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .row {
+      margin-top: 50px;
+      display: flex;
+      margin-bottom: 20px;
+
+      .player {
+        border-right: 1px solid lightgray;
+        width: 20%;
+        border-bottom: 1px solid lightgray;
+        padding-left: 20px;
+        padding-right: 20px;
+        .player-img-container {
+          padding-top: 10px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          .player-img {
+            border-radius: 50%;
+            height: 150px;
+            width: 100%;
+          }
+        }
+        .player-name {
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 0;
+        }
+        .player-info {
+          margin-top: 5px;
+          width: 100%;
+          font-size: 14px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      .player:hover {
+        box-shadow: 1px 1px 10px black;
+      }
     }
   }
 }
