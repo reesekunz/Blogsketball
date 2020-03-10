@@ -5,15 +5,14 @@ import { Route, NavLink } from "react-router-dom";
 // Components
 import NewHome from "./components/Home/NewHome";
 import Header from "./components/Header/Header";
-// import Home from "./components/Home/Home";
-import Betting from "./components/Betting/Betting";
 import PowerRankings from "./components/Power Rankings/PowerRankings";
 import Analysis from "./components/NewsAndAnalysis/NewsAndAnalysis";
-import NBADraft from "./components/NBADraft/NBADraft";
 import College from "./components/College/College";
-import Page2 from "./components/Home/Page2";
-import Page3 from "./components/Home/Page3";
-
+import Fantasy from "./components/Fantasy/Fantasy";
+// Dropdown components
+import GameBreakdowns from "./components/GameBreakdowns/GameBreakdowns";
+import Betting from "./components/Betting/Betting";
+import PlayerSpotlights from "./components/PlayerSpotlights/PlayerSpotlights";
 // Teams
 import Hawks from "./components/Teams/AtlantaHawks";
 import Celtics from "./components/Teams/BostonCeltics";
@@ -224,14 +223,6 @@ function App() {
         >
           News + Analysis
         </NavLink>
-
-        <NavLink
-          to="/betting"
-          activeClassName="activeNavButton"
-          className="nav-bar-link"
-        >
-          Betting
-        </NavLink>
         <NavLink
           to="/mens-ncaa"
           activeClassName="activeNavButton"
@@ -239,6 +230,14 @@ function App() {
         >
           NCAA
         </NavLink>
+        <NavLink
+          to="/fantasy"
+          activeClassName="activeNavButton"
+          className="nav-bar-link"
+        >
+          Fantasy
+        </NavLink>
+
         {/* Dropdown for Other  */}
         <div className="dropdown">
           <button className="dropbtn">
@@ -246,12 +245,17 @@ function App() {
           </button>
           <div className="dropdown-content-other">
             <div className="conference">
-              <NavLink to="/power-rankings" activeClassName="activeNavButton">
-                Power Rankings
+              <NavLink to="/betting" activeClassName="activeNavButton">
+                Betting
               </NavLink>
-
-              <NavLink to="/nba-mock-draft" activeClassName="activeNavButton">
-                NBA Mock Draft
+              <NavLink to="/game-breakdowns" activeClassName="activeNavButton">
+                Game Breakdowns
+              </NavLink>
+              <NavLink
+                to="/player-spotlights"
+                activeClassName="activeNavButton"
+              >
+                Player Spotlights
               </NavLink>
             </div>
           </div>
@@ -263,9 +267,9 @@ function App() {
       <Route path="/power-rankings" component={PowerRankings} />
       <Route path="/news-and-analysis" component={Analysis} />
       <Route path="/mens-ncaa" component={College} />
-      <Route path="/nba-mock-draft" component={NBADraft} />
-      <Route path="/page-2" component={Page2} />
-      <Route path="/page-3" component={Page3} />
+      <Route path="/game-breakdowns" component={GameBreakdowns} />
+      <Route path="/fantasy" component={Fantasy} />
+      <Route path="/player-spotlights" component={PlayerSpotlights} />
 
       <Route path="/atlanta-hawks" component={Hawks} />
       <Route path="/boston-celtics" component={Celtics} />

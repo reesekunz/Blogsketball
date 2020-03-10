@@ -1,5 +1,6 @@
 import React from "react";
 import "./teams.scss";
+import "./nuggets.scss";
 import NuggetsLogo from "../../images/Nuggets.jpeg";
 import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
@@ -19,120 +20,140 @@ function Nuggets() {
           <img src={NuggetsLogo} alt="Nuggetslogo" className="team-logo" />
         </div>
       </div>
-      <button onClick={Layout.PageReload}>
-        <IoIosList size={35} />
-      </button>
-      <button onClick={Layout.CardLayout}>
-        <IoIosBrowsers size={35} />
-      </button>
-      <div className="article-container">
-        {/* Row 1  */}
-        <div className="article-row">
-          {/* Top 10 Underrated Article */}
-          <NavLink
-            to="/top-10-underrated"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+      <div className="nuggets-main-container">
+        <button onClick={Layout.PageReload}>
+          <IoIosList size={35} />
+        </button>
+        <button onClick={Layout.CardLayout}>
+          <IoIosBrowsers size={35} />
+        </button>
+        <div className="article-container">
+          {/* Row 1  */}
+          <div className="article-row">
+            {/* Top 10 Underrated Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Monte} alt="Monte Morris" className="article-img" />
               </div>
-              <h5 className="article-header">
-                Ranking the Top 10 Most Underrated Players
-              </h5>
+              <NavLink
+                to="/top-10-underrated"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">
+                  Ranking the Top 10 Most Underrated Players
+                </h5>
+              </NavLink>
             </div>
-          </NavLink>
-          {/* Top 10 Overrated Article */}
-          <NavLink
-            to="/top-10-overrated"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+            {/* Top 10 Overrated Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Gary} alt="Gary Harris" className="article-img" />
               </div>
-              <h5 className="article-header">
-                Ranking the Top 10 Most Overrated Players
-              </h5>
+              <NavLink
+                to="/top-10-overrated"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">
+                  Ranking the Top 10 Most Overrated Players
+                </h5>
+              </NavLink>
             </div>
-          </NavLink>
-          {/* NBA Rank 91-100 Article */}
-          <NavLink
-            to="/nba-rank-91-100"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+            {/* NBA Rank 91-100 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={MPJ} alt="MPJ" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 91-100</h5>
+              <NavLink
+                to="/nba-rank-91-100"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 91-100</h5>
+              </NavLink>
             </div>
-          </NavLink>
-        </div>
-        {/* Row 2 */}
-        <div className="article-row">
-          {/* NBA Rank 71-80 Article */}
-          <NavLink
-            to="/nba-rank-71-80"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+          </div>
+          {/* Row 2 */}
+          <div className="article-row">
+            {/* NBA Rank 71-80 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Paul} alt="Paul Millsap" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 71-80</h5>
+              <NavLink
+                to="/nba-rank-71-80"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 71-80</h5>
+              </NavLink>
             </div>
-          </NavLink>
-          {/* NBA Rank 41-50 Article */}
-          <NavLink
-            to="/nba-rank-41-50"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+            {/* NBA Rank 41-50 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Jamal} alt="Jamal Murray" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 41-50</h5>
+              <NavLink
+                to="/nba-rank-41-50"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 41-50</h5>
+              </NavLink>
             </div>
-          </NavLink>
-          {/* NBA Rank 6-10 Article */}
-          <NavLink
-            to="/nba-rank-6-10"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+            {/* NBA Rank 6-10 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Jokic} alt="Jokic" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 6-10</h5>
+              <NavLink
+                to="/nba-rank-6-10"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 6-10</h5>
+              </NavLink>
             </div>
-          </NavLink>
-        </div>
-        {/* Row 3 */}
-        <div className="article-row">
-          <div className="article-card">
-            <img src={NuggetsLogo} alt="Nuggets logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
           </div>
-          <div className="article-card">
-            <img src={NuggetsLogo} alt="Nuggets logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={NuggetsLogo} alt="Nuggets logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
+          {/* Row 3 */}
+          <div className="article-row">
+            <div className="article-card">
+              <img
+                src={NuggetsLogo}
+                alt="Nuggets logo"
+                className="article-img"
+              />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
+            <div className="article-card">
+              <img
+                src={NuggetsLogo}
+                alt="Nuggets logo"
+                className="article-img"
+              />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
+            <div className="article-card">
+              <img
+                src={NuggetsLogo}
+                alt="Nuggets logo"
+                className="article-img"
+              />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
           </div>
         </div>
       </div>

@@ -450,7 +450,7 @@
 
       .player {
         border-right: 1px solid lightgray;
-        width: 20%;
+        width: 25%;
         border-bottom: 1px solid lightgray;
         padding-left: 20px;
         padding-right: 20px;
@@ -461,6 +461,8 @@
           justify-content: center;
 
           .player-img {
+            box-shadow: 1px 1px 5px black;
+
             border-radius: 50%;
             height: 150px;
             width: 100%;

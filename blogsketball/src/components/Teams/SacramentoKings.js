@@ -1,5 +1,6 @@
 import React from "react";
 import "./teams.scss";
+import "./kings.scss";
 import KingsLogo from "../../images/Kings.png";
 import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
@@ -19,35 +20,33 @@ function Kings() {
           <img src={KingsLogo} alt="Kings logo" className="team-logo" />
         </div>
       </div>
-      <button onClick={Layout.PageReload}>
-        <IoIosList size={35} />
-      </button>
-      <button onClick={Layout.CardLayout}>
-        <IoIosBrowsers size={35} />
-      </button>
-      <div className="article-container">
-        {/* Row 1  */}
-        <div className="article-row">
-          {/* Top 10 Underrated Article */}
-          <NavLink
-            to="/top-10-underrated"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+      <div className="kings-main-container">
+        <button onClick={Layout.PageReload}>
+          <IoIosList size={35} />
+        </button>
+        <button onClick={Layout.CardLayout}>
+          <IoIosBrowsers size={35} />
+        </button>
+        <div className="article-container">
+          {/* Row 1  */}
+          <div className="article-row">
+            {/* Top 10 Underrated Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Buddy} alt="Buddy Hield" className="article-img" />
               </div>
-              <h5 className="article-header">
-                Ranking the Top 10 Most Underrated Players
-              </h5>
+              <NavLink
+                to="/top-10-underrated"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">
+                  Ranking the Top 10 Most Underrated Players
+                </h5>
+              </NavLink>
             </div>
-          </NavLink>
-          <NavLink
-            to="/top-10-overrated"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+
             <div className="article-card">
               <div className="article-img-container">
                 <img
@@ -56,33 +55,35 @@ function Kings() {
                   className="article-img"
                 />
               </div>
-              <h5 className="article-header">
-                Ranking the Top 10 Most Overrated Players
-              </h5>
+              <NavLink
+                to="/top-10-overrated"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">
+                  Ranking the Top 10 Most Overrated Players
+                </h5>
+              </NavLink>
             </div>
-          </NavLink>
-          {/* NBA Rank 91-100 Article */}
-          <NavLink
-            to="/nba-rank-91-100"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+            {/* NBA Rank 91-100 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Bogdan} alt="Bogdan" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 91-100</h5>
+              <NavLink
+                to="/nba-rank-91-100"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 91-100</h5>
+              </NavLink>
             </div>
-          </NavLink>
-        </div>
-        {/* Row 2 */}
-        <div className="article-row">
-          {/* NBA Rank 81-90 Article */}
-          <NavLink
-            to="/nba-rank-81-90"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+          </div>
+          {/* Row 2 */}
+          <div className="article-row">
+            {/* NBA Rank 81-90 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img
@@ -91,55 +92,63 @@ function Kings() {
                   className="article-img"
                 />
               </div>
-              <h5 className="article-header">NBA Rank: 81-90</h5>
+              <NavLink
+                to="/nba-rank-81-90"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 81-90</h5>
+              </NavLink>
             </div>
-          </NavLink>
-          {/* NBA Rank 51-60 Article */}
-          <NavLink
-            to="/nba-rank-51-60"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+            {/* NBA Rank 51-60 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Hield} alt="Buddy Hield" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 51-60</h5>
+              <NavLink
+                to="/nba-rank-51-60"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 51-60</h5>
+              </NavLink>
             </div>
-          </NavLink>
-          {/* NBA Rank 41-50 Article */}
-          <NavLink
-            to="/nba-rank-41-50"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+            {/* NBA Rank 41-50 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Fox} alt="Swipa the Fox" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 41-50</h5>
+              <NavLink
+                to="/nba-rank-41-50"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 41-50</h5>
+              </NavLink>
             </div>
-          </NavLink>
-        </div>
-        {/* Row 3 */}
-        <div className="article-row">
-          <div className="article-card">
-            <img src={KingsLogo} alt="Kings logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
           </div>
-          <div className="article-card">
-            <img src={KingsLogo} alt="Kings logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={KingsLogo} alt="Kings logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
+          {/* Row 3 */}
+          <div className="article-row">
+            <div className="article-card">
+              <img src={KingsLogo} alt="Kings logo" className="article-img" />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
+            <div className="article-card">
+              <img src={KingsLogo} alt="Kings logo" className="article-img" />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
+            <div className="article-card">
+              <img src={KingsLogo} alt="Kings logo" className="article-img" />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
           </div>
         </div>
       </div>

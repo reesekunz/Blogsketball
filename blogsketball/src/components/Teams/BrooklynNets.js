@@ -1,5 +1,6 @@
 import React from "react";
 import "./teams.scss";
+import "./nets.scss";
 import NetsLogo from "../../images/Nets.png";
 import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
@@ -17,34 +18,32 @@ function Nets() {
           <img src={NetsLogo} alt="Nets logo" className="team-logo" />
         </div>
       </div>
-      <button onClick={Layout.PageReload}>
-        <IoIosList size={35} />
-      </button>
-      <button onClick={Layout.CardLayout}>
-        <IoIosBrowsers size={35} />
-      </button>
-      <div className="article-container">
-        {/* Row 1  */}
-        <div className="article-row">
-          {/* NBA Rank 91-100 Article */}
-          <NavLink
-            to="/nba-rank-91-100"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+      <div className="nets-main-container">
+        <button onClick={Layout.PageReload}>
+          <IoIosList size={35} />
+        </button>
+        <button onClick={Layout.CardLayout}>
+          <IoIosBrowsers size={35} />
+        </button>
+        <div className="article-container">
+          {/* Row 1  */}
+          <div className="article-row">
+            {/* NBA Rank 91-100 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={DJ} alt="DeAndre Jordan" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 91-100</h5>
+              <NavLink
+                to="/nba-rank-91-100"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 91-100</h5>
+              </NavLink>
             </div>
-          </NavLink>
-          {/* NBA Rank 71-80 Article */}
-          <NavLink
-            to="/nba-rank-71-80"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+            {/* NBA Rank 71-80 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img
@@ -53,73 +52,72 @@ function Nets() {
                   className="article-img"
                 />
               </div>
-              <h5 className="article-header">NBA Rank: 71-80</h5>
+              <NavLink
+                to="/nba-rank-71-80"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 71-80</h5>
+              </NavLink>
             </div>
-          </NavLink>
-          {/* NBA Rank 11-15 Article */}
-          <NavLink
-            to="/nba-rank-11-15"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+            {/* NBA Rank 11-15 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Kyrie} alt="Kyrie" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 11-15</h5>
+              <NavLink
+                to="/nba-rank-11-15"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 11-15</h5>
+              </NavLink>
             </div>
-          </NavLink>
-        </div>
-        {/* Row 2 */}
-        <div className="article-row">
-          {/* NBA Rank 1-5 Article */}
-          <NavLink
-            to="/nba-rank-1-5"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+          </div>
+          {/* Row 2 */}
+          <div className="article-row">
+            {/* NBA Rank 1-5 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={KD} alt="KD" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 1-5</h5>
+              <NavLink
+                to="/nba-rank-1-5"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 1-5</h5>
+              </NavLink>
             </div>
-          </NavLink>
-          <div className="article-card">
-            <img src={NetsLogo} alt="Nets logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
+            <div className="article-card">
+              <img src={NetsLogo} alt="Nets logo" className="article-img" />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
+            <div className="article-card">
+              <img src={NetsLogo} alt="Nets logo" className="article-img" />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
           </div>
-          <div className="article-card">
-            <img src={NetsLogo} alt="Nets logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-        </div>
-        {/* Row 3 */}
-        <div className="article-row">
-          <div className="article-card">
-            <img src={NetsLogo} alt="Nets logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={NetsLogo} alt="Nets logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-            <p>Article caption: blah blah blah blah</p>
-          </div>
-        </div>
-        <div className="article-card">
-          <img src={NetsLogo} alt="Nets logo" className="article-img" />
-          <div className="article-header-wordz">
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
+          {/* Row 3 */}
+          <div className="article-row">
+            <div className="article-card">
+              <img src={NetsLogo} alt="Nets logo" className="article-img" />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
+            <div className="article-card">
+              <img src={NetsLogo} alt="Nets logo" className="article-img" />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
           </div>
         </div>
       </div>

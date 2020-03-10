@@ -1,5 +1,6 @@
 import React from "react";
 import "./teams.scss";
+import "./heat.scss";
 import HeatLogo from "../../images/Heat.png";
 import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
@@ -18,107 +19,113 @@ function Heat() {
           <img src={HeatLogo} alt="Heat logo" className="team-logo" />
         </div>
       </div>
-      <button onClick={Layout.PageReload}>
-        <IoIosList size={35} />
-      </button>
-      <button onClick={Layout.CardLayout}>
-        <IoIosBrowsers size={35} />
-      </button>
-      <div className="article-container">
-        {/* Row 1  */}
-        <div className="article-row">
-          <NavLink
-            to="/2019-redraft"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+      <div className="heat-main-container">
+        <button onClick={Layout.PageReload}>
+          <IoIosList size={35} />
+        </button>
+        <button onClick={Layout.CardLayout}>
+          <IoIosBrowsers size={35} />
+        </button>
+        <div className="article-container">
+          {/* Row 1  */}
+          <div className="article-row">
             <div className="article-card">
               <img src={Zion} alt="Zion Williamson" className="article-img" />
-              <h5 className="article-header">2019 Lottery Re-Draft</h5>
+              <NavLink
+                to="/2019-redraft"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">2019 Lottery Re-Draft</h5>
+              </NavLink>
             </div>
-          </NavLink>
-          <NavLink
-            to="/top-10-overrated"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Jae} alt="Jae Crowder" className="article-img" />
               </div>
-              <h5 className="article-header">
-                Ranking the Top 10 Most Overrated Players
-              </h5>
+              <NavLink
+                to="/top-10-overrated"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">
+                  Ranking the Top 10 Most Overrated Players
+                </h5>
+              </NavLink>
             </div>
-          </NavLink>
-          {/* NBA Rank 71-80 Article */}
-          <NavLink
-            to="/nba-rank-71-80"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+            {/* NBA Rank 71-80 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Dragic} alt="Dragic" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 71-80</h5>
+              <NavLink
+                to="/nba-rank-71-80"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 71-80</h5>
+              </NavLink>
             </div>
-          </NavLink>
-        </div>
-        {/* Row 2 */}
-        <div className="article-row">
-          {/* NBA Rank 21-30 Article */}
-          <NavLink
-            to="/nba-rank-21-30"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+          </div>
+          {/* Row 2 */}
+          <div className="article-row">
+            {/* NBA Rank 21-30 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Bam} alt="Bam Bam" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 21-30</h5>
+              <NavLink
+                to="/nba-rank-21-30"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 21-30</h5>
+              </NavLink>
             </div>
-          </NavLink>
-          {/* NBA Rank 16-20 Article */}
-          <NavLink
-            to="/nba-rank-16-20"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+            {/* NBA Rank 16-20 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Jimmy} alt="Jimmy Butler" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 16-20</h5>
+              <NavLink
+                to="/nba-rank-16-20"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 16-20</h5>
+              </NavLink>
             </div>
-          </NavLink>
-          <div className="article-card">
-            <img src={HeatLogo} alt="Heat logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
+            <div className="article-card">
+              <img src={HeatLogo} alt="Heat logo" className="article-img" />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
           </div>
-        </div>
-        {/* Row 3 */}
-        <div className="article-row">
-          <div className="article-card">
-            <img src={HeatLogo} alt="Heat logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={HeatLogo} alt="Heat logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={HeatLogo} alt="Heat logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
+          {/* Row 3 */}
+          <div className="article-row">
+            <div className="article-card">
+              <img src={HeatLogo} alt="Heat logo" className="article-img" />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
+            <div className="article-card">
+              <img src={HeatLogo} alt="Heat logo" className="article-img" />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
+            <div className="article-card">
+              <img src={HeatLogo} alt="Heat logo" className="article-img" />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
           </div>
         </div>
       </div>

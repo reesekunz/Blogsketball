@@ -1,6 +1,8 @@
 .team-container {
-  margin-left: 100px;
-  margin-right: 100px;
+  // margin-left: 100px;
+  // margin-right: 100px;
+  font-family: "Cinzel", serif;
+
   .team-header {
     display: flex;
     flex-direction: column;
@@ -8,6 +10,7 @@
     justify-content: flex-start;
     height: 300px;
     border-bottom: 2px solid black;
+    background-color: white;
     .logo-container {
       .team-logo {
         height: 150px;
@@ -20,11 +23,18 @@
       font-size: 35px;
     }
   }
+  .buttonz {
+    // margin-left: 100px;
+    // margin-right: 100px;
+  }
   .article-container {
+    margin-left: 100px;
+    margin-right: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-bottom: 10%;
+    // width: 100%;
     .article-row {
       display: flex;
       flex-direction: column;
@@ -37,11 +47,12 @@
         color: black;
       }
       .article-card {
+        background-color: #fbfbfb;
         display: flex;
         border: 1px solid black;
         width: 100%;
         height: 93px;
-        box-shadow: 1px 2px black;
+        box-shadow: 1px 1px 5px black;
         margin-top: 25px;
         .article-img-container {
           width: 20%;

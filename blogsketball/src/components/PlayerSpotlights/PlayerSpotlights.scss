@@ -1,0 +1,43 @@
+.row {
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 20px;
+
+  .player {
+    border-right: 1px solid lightgray;
+    width: 25%;
+    border-bottom: 1px solid lightgray;
+    padding-left: 20px;
+    padding-right: 20px;
+    .player-img-container {
+      padding-top: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .player-img {
+        box-shadow: 1px 1px 5px black;
+
+        border-radius: 50%;
+        height: 150px;
+        width: 200px;
+      }
+    }
+    .player-name {
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+    .player-info {
+      margin-top: 5px;
+      width: 100%;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .player:hover {
+    box-shadow: 1px 1px 10px black;
+  }
+}

@@ -1,0 +1,48 @@
+.game-breakdown-container {
+  margin-right: 100px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Cinzel", serif;
+  .header {
+    display: flex;
+    justify-content: center;
+    color: gray;
+    font-size: 55px;
+    text-align: center;
+    text-shadow: 1px -1px black, 2px -2px black, 3px -3px black, 3px -3px black;
+  }
+  .row-wrapper {
+    margin-top: 25px;
+    .row {
+      display: flex;
+      justify-content: space-evenly;
+      .game-card {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        height: 200px;
+        width: 20%;
+        margin-bottom: 20px;
+        box-shadow: 1px 1px 5px black;
+
+        .date-written {
+          margin-top: 10px;
+          border-bottom: 1px solid lightgray;
+          font-size: 12px;
+        }
+        .home-article-link {
+          text-decoration: none;
+          color: black;
+          font-size: 16px;
+        }
+        .home-article-link:hover {
+          color: purple;
+        }
+      }
+      .game-card:hover {
+        box-shadow: 1px 1px 10px black;
+      }
+    }
+  }
+}

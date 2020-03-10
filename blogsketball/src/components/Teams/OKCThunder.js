@@ -1,5 +1,6 @@
 import React from "react";
 import "./teams.scss";
+import "./thunder.scss";
 import ThunderLogo from "../../images/Thunder.png";
 import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import { NavLink } from "react-router-dom";
@@ -18,34 +19,32 @@ function Thunder() {
           <img src={ThunderLogo} alt="Thunder logo" className="team-logo" />
         </div>
       </div>
-      <button onClick={Layout.PageReload}>
-        <IoIosList size={35} />
-      </button>
-      <button onClick={Layout.CardLayout}>
-        <IoIosBrowsers size={35} />
-      </button>
-      <div className="article-container">
-        {/* Row 1  */}
-        <div className="article-row">
-          {/* NBA Rank 81-90 Article */}
-          <NavLink
-            to="/nba-rank-81-90"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+      <div className="thunder-main-container">
+        <button onClick={Layout.PageReload}>
+          <IoIosList size={35} />
+        </button>
+        <button onClick={Layout.CardLayout}>
+          <IoIosBrowsers size={35} />
+        </button>
+        <div className="article-container">
+          {/* Row 1  */}
+          <div className="article-row">
+            {/* NBA Rank 81-90 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Adams} alt="Steven Adams" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 81-90</h5>
+              <NavLink
+                to="/nba-rank-81-90"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 81-90</h5>
+              </NavLink>
             </div>
-          </NavLink>
-          {/* NBA Rank 61-80 Article */}
-          <NavLink
-            to="/nba-rank-61-70"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+            {/* NBA Rank 61-80 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img
@@ -54,70 +53,98 @@ function Thunder() {
                   className="article-img"
                 />
               </div>
-              <h5 className="article-header">NBA Rank: 61-70</h5>
+              <NavLink
+                to="/nba-rank-61-70"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 61-70</h5>
+              </NavLink>
             </div>
-          </NavLink>
-          {/* NBA Rank 51-60 Article */}
-          <NavLink
-            to="/nba-rank-51-60"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+            {/* NBA Rank 51-60 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={Danilo} alt="Danilo" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 51-60</h5>
+              <NavLink
+                to="/nba-rank-51-60"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 51-60</h5>
+              </NavLink>
             </div>
-          </NavLink>
-        </div>
-        {/* Row 2 */}
-        <div className="article-row">
-          {/* NBA Rank 16-20 Article */}
-          <NavLink
-            to="/nba-rank-16-20"
-            activeClassName="activeNavButton"
-            className="team-link"
-          >
+          </div>
+          {/* Row 2 */}
+          <div className="article-row">
+            {/* NBA Rank 16-20 Article */}
+
             <div className="article-card">
               <div className="article-img-container">
                 <img src={CP3} alt="Chris Paul" className="article-img" />
               </div>
-              <h5 className="article-header">NBA Rank: 16-20</h5>
+              <NavLink
+                to="/nba-rank-16-20"
+                activeClassName="activeNavButton"
+                className="team-link"
+              >
+                <h5 className="article-header">NBA Rank: 16-20</h5>
+              </NavLink>
             </div>
-          </NavLink>
-          <div className="article-card">
-            <img src={ThunderLogo} alt="Thunder logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
+            <div className="article-card">
+              <img
+                src={ThunderLogo}
+                alt="Thunder logo"
+                className="article-img"
+              />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
+            <div className="article-card">
+              <img
+                src={ThunderLogo}
+                alt="Thunder logo"
+                className="article-img"
+              />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
           </div>
-          <div className="article-card">
-            <img src={ThunderLogo} alt="Thunder logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-        </div>
-        {/* Row 3 */}
-        <div className="article-row">
-          <div className="article-card">
-            <img src={ThunderLogo} alt="Thunder logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={ThunderLogo} alt="Thunder logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
-          </div>
-          <div className="article-card">
-            <img src={ThunderLogo} alt="Thunder logo" className="article-img" />
-            <h5 className="article-header">
-              Article header: blah blah blah blah
-            </h5>
+          {/* Row 3 */}
+          <div className="article-row">
+            <div className="article-card">
+              <img
+                src={ThunderLogo}
+                alt="Thunder logo"
+                className="article-img"
+              />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
+            <div className="article-card">
+              <img
+                src={ThunderLogo}
+                alt="Thunder logo"
+                className="article-img"
+              />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
+            <div className="article-card">
+              <img
+                src={ThunderLogo}
+                alt="Thunder logo"
+                className="article-img"
+              />
+              <h5 className="article-header">
+                Article header: blah blah blah blah
+              </h5>
+            </div>
           </div>
         </div>
       </div>

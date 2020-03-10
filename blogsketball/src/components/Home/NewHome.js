@@ -32,6 +32,7 @@ function NewHome() {
                 className="main-article-img"
               />
               <div className="article-date">FEB. 8</div>
+
               <h3 className="article-header">
                 Who Are Legitimate Title Contenders? Post Trade-Deadline Edition
               </h3>
@@ -518,7 +519,7 @@ function NewHome() {
               </p>
             </div>
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="game-card">
               <div className="date-written">MAR. 10</div>
 
@@ -595,7 +596,7 @@ function NewHome() {
                 the Nuggets...
               </p>
             </div>
-          </div>{" "}
+          </div>{" "} */}
         </div>
       </div>
       {/* College Bball Section */}
@@ -671,7 +672,7 @@ function NewHome() {
         </div>
       </div>
       {/* NBA Draft Section  */}
-      <div className="small-section-container">
+      {/* <div className="small-section-container">
         <div className="section-header-container">
           <h3 className="section-header">NBA Draft </h3>
           <NavLink
@@ -756,7 +757,7 @@ function NewHome() {
             </NavLink>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Player Spotlight Section */}
       <div className="player-spotlight-container">
         <div className="section-header-container">
@@ -790,13 +791,6 @@ function NewHome() {
             </div>
             <h5 className="player-name">Zion Williamson</h5>
             <p className="player-info"> New Orleans Pelicans</p>
-          </div>
-          <div className="player">
-            <div className="player-img-container">
-              <img className="player-img" src={Zion} alt="zion" />
-            </div>
-            <h5 className="player-name">Zion Williamson</h5>
-            <p className="player-info">New Orleans Pelicans</p>
           </div>
           <div className="player">
             <div className="player-img-container">
