@@ -5,10 +5,10 @@ import TrailBlazers from "../../images/TrailBlazers.jpeg";
 function Betting() {
   return (
     <div className="betting-container">
-      <h2 className="header">Betting</h2>
+      {/* <h2 className="header">Betting</h2> */}
       <div className="pick-card">
         <div className="pick-wrapper">
-          <h1>Pick of the Day:</h1>
+          <h1>Pick of the Day</h1>
 
           <div className="pick-selection-wrapper">
             <img src={TrailBlazers} alt="Trailblazers" />

@@ -1,5 +1,6 @@
 .App {
   background-color: #fbfbfb;
+  // font-family: "Cinzel", serif;
 
   .links-container {
     display: flex;
@@ -113,6 +114,8 @@
       height: 670px;
       background-color: #f9f9f9;
       box-shadow: 1px 1px 3px black;
+      // transitions
+      transition: 0.3s ease;
     }
   }
 
@@ -152,8 +155,48 @@
     flex-direction: row;
     width: 170px;
     border: 2px solid black;
-    height: 130px;
+    height: 85px;
     background-color: #f9f9f9;
     box-shadow: 1px 1px 3px black;
+  }
+}
+
+.col {
+  float: left;
+  width: 50%;
+}
+.type-title {
+  text-align: center;
+}
+.menu {
+  list-style: none;
+  padding-left: 0;
+  display: table;
+  margin: 0 auto;
+
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  .menu-item {
+    position: relative;
+    float: left;
+
+    &:hover > .sub-menu {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    &:hover > a {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    a {
+      display: block;
+      padding: 10px 20px;
+      transition: 0.3s ease;
+    }
   }
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import "./teams.scss";
-import "./magic.scss";
 import MagicLogo from "../../images/Magic.png";
 import { IoIosList, IoIosBrowsers } from "react-icons/io";
 import Layout from "../../helpers/Layout";
@@ -17,103 +16,12 @@ function Magic() {
           <img src={MagicLogo} alt="Magic logo" className="team-logo" />
         </div>
       </div>
-      <div className="magic-main-container">
-        <button onClick={Layout.PageReload}>
+      {/* <button onClick={Layout.PageReload}>
           <IoIosList size={35} />
         </button>
         <button onClick={Layout.CardLayout}>
           <IoIosBrowsers size={35} />
-        </button>
-        <div className="article-container">
-          {/* Row 1  */}
-          <div className="article-row">
-            {/* NBA Rank 91-100 Article */}
-
-            <div className="article-card">
-              <div className="article-img-container">
-                <img src={Evan} alt="Evan" className="article-img" />
-              </div>
-              <NavLink
-                to="/nba-rank-91-100"
-                activeClassName="activeNavButton"
-                className="team-link"
-              >
-                <h5 className="article-header">NBA Rank: 91-100</h5>
-              </NavLink>
-            </div>
-            {/* NBA Rank 81-90 Article */}
-
-            <div className="article-card">
-              <div className="article-img-container">
-                <img src={Isaac} alt="Jonathan Isaac" className="article-img" />
-              </div>
-              <NavLink
-                to="/nba-rank-81-90"
-                activeClassName="activeNavButton"
-                className="team-link"
-              >
-                <h5 className="article-header">NBA Rank: 81-90</h5>
-              </NavLink>
-            </div>
-            {/* NBA Rank 41-50 Article */}
-
-            <div className="article-card">
-              <div className="article-img-container">
-                <img src={Vuc} alt="Vuc" className="article-img" />
-              </div>
-              <NavLink
-                to="/nba-rank-41-50"
-                activeClassName="activeNavButton"
-                className="team-link"
-              >
-                <h5 className="article-header">NBA Rank: 41-50</h5>
-              </NavLink>
-            </div>
-          </div>
-          {/* Row 2 */}
-          <div className="article-row">
-            <div className="article-card">
-              <img src={MagicLogo} alt="Magic logo" className="article-img" />
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-            </div>
-            <div className="article-card">
-              <img src={MagicLogo} alt="Magic logo" className="article-img" />
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-            </div>
-            <div className="article-card">
-              <img src={MagicLogo} alt="Magic logo" className="article-img" />
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-            </div>
-          </div>
-          {/* Row 3 */}
-          <div className="article-row">
-            <div className="article-card">
-              <img src={MagicLogo} alt="Magic logo" className="article-img" />
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-            </div>
-            <div className="article-card">
-              <img src={MagicLogo} alt="Magic logo" className="article-img" />
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-            </div>
-            <div className="article-card">
-              <img src={MagicLogo} alt="Magic logo" className="article-img" />
-              <h5 className="article-header">
-                Article header: blah blah blah blah
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
+        </button> */}
     </div>
   );
 }

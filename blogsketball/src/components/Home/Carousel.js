@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./Carousel.scss";
 import Card from "./Card";
 import data from "./data";
-import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
+import {IoIosArrowDropright, IoIosArrowDropleft} from "react-icons/io";
 // class component
-class Carousel extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -46,8 +46,6 @@ class Carousel extends Component {
           <IoIosArrowDropright size={25} />
         </button>
         <div className="page">
-          <section> </section>
-
           <div className="col">
             <div className={`cards-slider active-slide-${property.index}`}>
               <div
@@ -69,4 +67,4 @@ class Carousel extends Component {
   }
 }
 
-export default Carousel;
+export default App;

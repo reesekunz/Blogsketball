@@ -1,6 +1,13 @@
 import React from "react";
-// import PropTypes from "prop-types"
+import Layout from "../../helpers/Layout";
 import "./Carousel.scss";
+import {NavLink, Route} from "react-router-dom"
+
+function NBARankArticles() {
+  let myButton = document.querySelector("#myButton");
+  myButton.style.color = "yellow"
+}
+
 
 const Card = ({ property }) => {
   const {
@@ -10,14 +17,19 @@ const Card = ({ property }) => {
     address,
     bedrooms,
     bathrooms,
-    carSpaces
+    carSpaces,
+    link_to
   } = property;
+
   return (
     <div id={`card-${index}`} className="card">
       <img src={picture} alt="picture" />
       <div className="details">
         <span className="index">{index + 1}</span>
-        <p className="location">{city}</p>
+        <div onClick={NBARankArticles} className="myButton"  >
+        {city}
+        </div>
+
         <ul className="features">
           <li className="icon-bed">{bedrooms}</li>
           <li className="icon-bath">{bathrooms}</li>

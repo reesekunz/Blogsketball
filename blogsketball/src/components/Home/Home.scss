@@ -121,7 +121,7 @@
       }
       .latest-articles-header {
         margin-top: 10px;
-        font-size: 18px;
+        font-size: 22.5px;
         border-bottom: 1px solid gray;
         padding-bottom: 1%;
         // margin-bottom: 5%;
@@ -144,15 +144,22 @@
           color: purple;
         }
       }
+      .potd {
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+
       .view-history-btn {
         border: 1px solid black;
         width: 125px;
         display: flex;
         justify-content: center;
-        margin-top: 2%;
+        margin-top: 5px;
         background-color: #29005d;
         padding: 1%;
         margin-bottom: 60px;
+        color: white;
+        cursor: pointer;
         .btn-link {
           color: white;
           text-decoration: none;
@@ -183,13 +190,17 @@
         }
       }
     }
+    .ag-grid {
+      display: none;
+    }
   }
   .nba-rank-container {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+    // justify-content: center;
     .section-header {
       margin-top: 20px;
-      font-size: 25px;
+      font-size: 30px;
       margin-bottom: 10px;
     }
   }
@@ -198,7 +209,7 @@
     align-items: center;
     .section-header {
       margin-top: 20px;
-      font-size: 25px;
+      font-size: 30px;
       margin-bottom: 10px;
     }
     .view-all-link {
@@ -317,7 +328,7 @@
       align-items: center;
       .section-header {
         margin-top: 10px;
-        font-size: 25px;
+        font-size: 30px;
         margin-bottom: 10px;
       }
       .view-all-link {
@@ -430,7 +441,7 @@
       align-items: center;
       .section-header {
         margin-top: 20px;
-        font-size: 25px;
+        font-size: 30px;
         margin-bottom: 20px;
       }
       .view-all-link {

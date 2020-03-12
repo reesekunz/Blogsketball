@@ -11,7 +11,7 @@ import College from "./components/College/College";
 import Fantasy from "./components/Fantasy/Fantasy";
 // Dropdown components
 import GameBreakdowns from "./components/GameBreakdowns/GameBreakdowns";
-import Betting from "./components/Betting/Betting";
+// import Betting from "./components/Betting/Betting";
 import PlayerSpotlights from "./components/PlayerSpotlights/PlayerSpotlights";
 // Teams
 import Hawks from "./components/Teams/AtlantaHawks";
@@ -245,13 +245,15 @@ function App() {
           </button>
           <div className="dropdown-content-other">
             <div className="conference">
-              <NavLink to="/betting" activeClassName="activeNavButton">
-                Betting
-              </NavLink>
-              <NavLink to="/game-breakdowns" activeClassName="activeNavButton">
+              <NavLink
+                className="menu-item"
+                to="/game-breakdowns"
+                activeClassName="activeNavButton"
+              >
                 Game Breakdowns
               </NavLink>
               <NavLink
+                className="menu-item"
                 to="/player-spotlights"
                 activeClassName="activeNavButton"
               >
@@ -263,7 +265,7 @@ function App() {
       </div>
       {/* Routes  */}
       <Route exact path="/" component={NewHome} />
-      <Route path="/betting" component={Betting} />
+      {/* <Route path="/betting" component={Betting} /> */}
       <Route path="/power-rankings" component={PowerRankings} />
       <Route path="/news-and-analysis" component={Analysis} />
       <Route path="/mens-ncaa" component={College} />

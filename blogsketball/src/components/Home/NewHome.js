@@ -14,6 +14,9 @@ import NotPabloLogo from "../../images/NotPabloLogo.png";
 import Jay from "../../images/Jay.jpeg";
 
 import Carousel from "./Carousel";
+import AGGrid from "../Betting/AGGrid";
+import Layout from "../../helpers/Layout";
+
 function NewHome() {
   return (
     <div className="home">
@@ -215,12 +218,19 @@ function NewHome() {
             {/* </ul> */}
           </div>
           <h4 className="latest-articles-header">Bet of the Day</h4>
-          <h3>New Orleans Pelicans -5 @ Chicago Bulls </h3>
+          <h3 className="potd">New Orleans Pelicans -5 @ Chicago Bulls </h3>
+          <p className="record">Record: 1-0 ATS (100%)</p>
           {/* <div>Last updated: 03/03/20 </div> */}
           <div className="view-history-btn">
-            <NavLink className="btn-link" to="/betting">
+            <div
+              // className="view-history-btn"
+              onClick={Layout.ShowBettingHistory}
+            >
               View History 💰
-            </NavLink>
+            </div>
+            {/* <div className="ag-grid">
+              <AGGrid />
+            </div> */}
           </div>
           <h4 className="latest-articles-header">Follow Us</h4>
           <div className="icons">
@@ -262,6 +272,9 @@ function NewHome() {
             />
           </a>
         </div>
+        <div className="ag-grid">
+          <AGGrid />
+        </div>
       </div>
 
       {/* Nba Rank Section Section */}
@@ -271,7 +284,7 @@ function NewHome() {
       </div>
       {/* News and Analysis Section */}
       <div className="section-header-container">
-        <h3 className="section-header">News/Analysis</h3>
+        <h3 className="section-header">News and Analysis</h3>
         <NavLink
           to="/mens-ncaa"
           activeClassName="activeNavButton"
@@ -519,84 +532,6 @@ function NewHome() {
               </p>
             </div>
           </div>
-          {/* <div className="row">
-            <div className="game-card">
-              <div className="date-written">MAR. 10</div>
-
-              <NavLink
-                to="/top-10-college-coaches"
-                activeClassName="activeNavButton"
-                className="home-article-link"
-              >
-                <h3 className="secondary-article-header">
-                  {" "}
-                  Michigan St. @ Lousiville
-                </h3>
-              </NavLink>
-              <p className="article-text">
-                Garry Harris’ production has dipped the past two seasons to the
-                point where one could debate if he should even be starting for
-                the Nuggets...
-              </p>
-            </div>
-            <div className="game-card">
-              <div className="date-written">MAR. 10</div>
-
-              <NavLink
-                to="/top-10-college-coaches"
-                activeClassName="activeNavButton"
-                className="home-article-link"
-              >
-                <h3 className="secondary-article-header">
-                  {" "}
-                  Michigan St. @ Lousiville
-                </h3>
-              </NavLink>
-              <p className="article-text">
-                Garry Harris’ production has dipped the past two seasons to the
-                point where one could debate if he should even be starting for
-                the Nuggets...
-              </p>
-            </div>
-            <div className="game-card">
-              <div className="date-written">MAR. 10</div>
-
-              <NavLink
-                to="/top-10-college-coaches"
-                activeClassName="activeNavButton"
-                className="home-article-link"
-              >
-                <h3 className="secondary-article-header">
-                  {" "}
-                  Michigan St. @ Lousiville
-                </h3>
-              </NavLink>
-              <p className="article-text">
-                Garry Harris’ production has dipped the past two seasons to the
-                point where one could debate if he should even be starting for
-                the Nuggets...
-              </p>
-            </div>
-            <div className="game-card">
-              <div className="date-written">MAR. 10</div>
-
-              <NavLink
-                to="/top-10-college-coaches"
-                activeClassName="activeNavButton"
-                className="home-article-link"
-              >
-                <h3 className="secondary-article-header">
-                  {" "}
-                  Michigan St. @ Lousiville
-                </h3>
-              </NavLink>
-              <p className="article-text">
-                Garry Harris’ production has dipped the past two seasons to the
-                point where one could debate if he should even be starting for
-                the Nuggets...
-              </p>
-            </div>
-          </div>{" "} */}
         </div>
       </div>
       {/* College Bball Section */}

@@ -57,7 +57,62 @@ function PageReload() {
   return false;
 }
 
+function ShowBettingHistory() {
+  var AGGrid = document.querySelector(".ag-grid");
+  AGGrid.style.display = "flex";
+  AGGrid.style.justifyContent = "center";
+  AGGrid.style.marginTop = "400px";
+
+  AGGrid.style.position = "absolute";
+  AGGrid.style.width = "100%";
+
+  var Column1 = document.querySelector(".column1");
+  Column1.style.filter = "blur(4px)";
+
+  var Column2 = document.querySelector(".column2");
+  Column2.style.filter = "blur(4px)";
+
+  var Column3 = document.querySelector(".column3");
+  Column3.style.filter = "blur(4px)";
+}
+
+function CloseButton() {
+  var AGGrid = document.querySelector(".ag-grid");
+  AGGrid.style.display = "none";
+
+  var Column1 = document.querySelector(".column1");
+  Column1.style.filter = "none";
+
+  var Column2 = document.querySelector(".column2");
+  Column2.style.filter = "none";
+
+  var Column3 = document.querySelector(".column3");
+  Column3.style.filter = "none";
+}
+
+
+
+let myButton = document.querySelector("#myButton");
+function NBARankArticles() {
+  myButton.style.color = "yellow"
+}
+if(myButton) {
+myButton.addEventListener("click", myButton) }
+
+
+// function NBARankArticles() {
+//   var button = document.querySelector("#myButton")
+//   if(button) {
+//     button.addEventListener("click", NBARankArticles);
+//     alert ("ITS WORKING!");
+//   }
+// }
+
+
 export default {
   CardLayout,
-  PageReload
+  PageReload,
+  ShowBettingHistory,
+  CloseButton,
+  NBARankArticles
 };

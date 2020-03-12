@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import "./Betting.scss";
+// import "./Betting.scss";
 import { AgGridReact } from "ag-grid-react";
 import "ag-grid-community/dist/styles/ag-grid.css";
 import "ag-grid-community/dist/styles/ag-theme-balham.css";
-
+import { IoIosCloseCircleOutline } from "react-icons/io";
+import Layout from "../../helpers/Layout";
 class AGGrid extends Component {
   constructor(props) {
     super(props);
@@ -57,18 +58,30 @@ class AGGrid extends Component {
 
   render() {
     return (
-      <div
-        className="ag-theme-balham"
-        style={{
-          height: "400px",
-          width: "750px",
-          border: "1px solid black"
-        }}
-      >
-        <AgGridReact
-          columnDefs={this.state.columnDefs}
-          rowData={this.state.rowData}
-        ></AgGridReact>
+      <div className="ag-grid-container">
+        <div className="top-container">
+          <h3>Betting History</h3>
+          <div className="close-x-btn">
+            <IoIosCloseCircleOutline
+              size={40}
+              color="red"
+              onClick={Layout.CloseButton}
+            />
+          </div>
+        </div>
+        <div
+          className="ag-theme-balham"
+          style={{
+            height: "400px",
+            width: "750px",
+            border: "1px solid black"
+          }}
+        >
+          <AgGridReact
+            columnDefs={this.state.columnDefs}
+            rowData={this.state.rowData}
+          ></AgGridReact>
+        </div>
       </div>
     );
   }
