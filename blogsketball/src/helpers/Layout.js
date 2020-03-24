@@ -90,15 +90,13 @@ function CloseButton() {
   Column3.style.filter = "none";
 }
 
-
-
 let myButton = document.querySelector("#myButton");
 function NBARankArticles() {
-  myButton.style.color = "yellow"
+  myButton.style.color = "yellow";
 }
-if(myButton) {
-myButton.addEventListener("click", myButton) }
-
+if (myButton) {
+  myButton.addEventListener("click", myButton);
+}
 
 // function NBARankArticles() {
 //   var button = document.querySelector("#myButton")
@@ -107,7 +105,6 @@ myButton.addEventListener("click", myButton) }
 //     alert ("ITS WORKING!");
 //   }
 // }
-
 
 export default {
   CardLayout,

@@ -9,7 +9,6 @@ import PowerRankings from "./components/Power Rankings/PowerRankings";
 import Analysis from "./components/NewsAndAnalysis/NewsAndAnalysis";
 import College from "./components/College/College";
 import Fantasy from "./components/Fantasy/Fantasy";
-// Dropdown components
 import GameBreakdowns from "./components/GameBreakdowns/GameBreakdowns";
 // import Betting from "./components/Betting/Betting";
 import PlayerSpotlights from "./components/PlayerSpotlights/PlayerSpotlights";
@@ -67,6 +66,19 @@ import NBARank16to20 from "./articles/NBARank16-20";
 import NBARank11to15 from "./articles/NBARank11-15";
 import NBARank6to10 from "./articles/NBARank6-10";
 import NBARank1to5 from "./articles/NBARank1-5";
+// Player spotlight articles
+import Zion from "./articles/PlayerSpotlights/Zion";
+import Warren from "./articles/PlayerSpotlights/Warren";
+import Jokic from "./articles/PlayerSpotlights/Jokic";
+import Covington from "./articles/PlayerSpotlights/Covington";
+import Giannis from "./articles/PlayerSpotlights/Giannis";
+import Dame from "./articles/PlayerSpotlights/Dame";
+import DLo from "./articles/PlayerSpotlights/DLo";
+import RJ from "./articles/PlayerSpotlights/RJ";
+import DBook from "./articles/PlayerSpotlights/DBook";
+import JaylenBrown from "./articles/PlayerSpotlights/JaylenBrown";
+// images
+import BlogsketballLogo from "./images/Blogsketball.png";
 
 function App() {
   return (
@@ -237,9 +249,16 @@ function App() {
         >
           Fantasy
         </NavLink>
+        <NavLink
+          to="/player-spotlights"
+          activeClassName="activeNavButton"
+          className="nav-bar-link"
+        >
+          Player Spotlights
+        </NavLink>
 
         {/* Dropdown for Other  */}
-        <div className="dropdown">
+        {/* <div className="dropdown">
           <button className="dropbtn">
             More <IoIosArrowDown />
           </button>
@@ -261,7 +280,7 @@ function App() {
               </NavLink>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* Routes  */}
       <Route exact path="/" component={NewHome} />
@@ -326,6 +345,16 @@ function App() {
       <Route path="/nba-rank-11-15" component={NBARank11to15} />
       <Route path="/nba-rank-6-10" component={NBARank6to10} />
       <Route path="/nba-rank-1-5" component={NBARank1to5} />
+      <Route path="/zion" component={Zion} />
+      <Route path="/warren" component={Warren} />
+      <Route path="/jokic" component={Jokic} />
+      <Route path="/covington" component={Covington} />
+      <Route path="/giannis" component={Giannis} />
+      <Route path="/dame" component={Dame} />
+      <Route path="/dlo" component={DLo} />
+      <Route path="/rj" component={RJ} />
+      <Route path="/dbook" component={DBook} />
+      <Route path="/jaylen-brown" component={JaylenBrown} />
     </div>
   );
 }
