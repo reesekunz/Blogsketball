@@ -11,7 +11,6 @@ import College from "./components/College/College";
 import Fantasy from "./components/Fantasy/Fantasy";
 import GameBreakdowns from "./components/GameBreakdowns/GameBreakdowns";
 // import Betting from "./components/Betting/Betting";
-import PlayerSpotlights from "./components/PlayerSpotlights/PlayerSpotlights";
 // Teams
 import Hawks from "./components/Teams/AtlantaHawks";
 import Celtics from "./components/Teams/BostonCeltics";
@@ -79,6 +78,11 @@ import DBook from "./articles/PlayerSpotlights/DBook";
 import JaylenBrown from "./articles/PlayerSpotlights/JaylenBrown";
 // images
 import BlogsketballLogo from "./images/Blogsketball.png";
+
+import PlayersList from "./components/PlayerSpotlights/PlayersList";
+import Player from "./components/PlayerSpotlights/Player";
+
+import playersData from "./data/playerData";
 
 function App() {
   return (
@@ -290,7 +294,17 @@ function App() {
       <Route path="/mens-ncaa" component={College} />
       <Route path="/game-breakdowns" component={GameBreakdowns} />
       <Route path="/fantasy" component={Fantasy} />
-      <Route path="/player-spotlights" component={PlayerSpotlights} />
+      <Route
+        exact
+        path="/player-spotlights"
+        render={props => <PlayersList {...props} playersList={playersData} />}
+      />
+      <Route
+        path="/player-spotlights/:playerId"
+        render={props => (
+          <Player {...props} playersList={playersData} /> // spread in props --> same as "match={props.match} location={props.location} history={props.history}"
+        )}
+      />
 
       <Route path="/atlanta-hawks" component={Hawks} />
       <Route path="/boston-celtics" component={Celtics} />
