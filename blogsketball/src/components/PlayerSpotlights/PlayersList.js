@@ -17,7 +17,7 @@ function PlayersList(props) {
                 }
               >
                 <img
-                  src={player.thumbnail}
+                  src={player.img}
                   alt={player.name}
                   className="player-img"
                 />

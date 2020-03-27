@@ -65,17 +65,7 @@ import NBARank16to20 from "./articles/NBARank16-20";
 import NBARank11to15 from "./articles/NBARank11-15";
 import NBARank6to10 from "./articles/NBARank6-10";
 import NBARank1to5 from "./articles/NBARank1-5";
-// Player spotlight articles
-import Zion from "./articles/PlayerSpotlights/Zion";
-import Warren from "./articles/PlayerSpotlights/Warren";
-import Jokic from "./articles/PlayerSpotlights/Jokic";
-import Covington from "./articles/PlayerSpotlights/Covington";
-import Giannis from "./articles/PlayerSpotlights/Giannis";
-import Dame from "./articles/PlayerSpotlights/Dame";
-import DLo from "./articles/PlayerSpotlights/DLo";
-import RJ from "./articles/PlayerSpotlights/RJ";
-import DBook from "./articles/PlayerSpotlights/DBook";
-import JaylenBrown from "./articles/PlayerSpotlights/JaylenBrown";
+
 // images
 import BlogsketballLogo from "./images/Blogsketball.png";
 
@@ -359,16 +349,6 @@ function App() {
       <Route path="/nba-rank-11-15" component={NBARank11to15} />
       <Route path="/nba-rank-6-10" component={NBARank6to10} />
       <Route path="/nba-rank-1-5" component={NBARank1to5} />
-      <Route path="/zion" component={Zion} />
-      <Route path="/warren" component={Warren} />
-      <Route path="/jokic" component={Jokic} />
-      <Route path="/covington" component={Covington} />
-      <Route path="/giannis" component={Giannis} />
-      <Route path="/dame" component={Dame} />
-      <Route path="/dlo" component={DLo} />
-      <Route path="/rj" component={RJ} />
-      <Route path="/dbook" component={DBook} />
-      <Route path="/jaylen-brown" component={JaylenBrown} />
     </div>
   );
 }
