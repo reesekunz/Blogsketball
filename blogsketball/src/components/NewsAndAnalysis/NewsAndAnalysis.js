@@ -3,7 +3,7 @@ import "./NewsAndAnalysis.scss";
 import { NavLink } from "react-router-dom";
 // import BlogsketballIMG from "../../images/Blogsketball.png";
 import KobeChampionship from "../../images/KobeChampionship.jpeg";
-import Zion from "../../images/Zion.jpeg";
+import Zion from "../../images/Zion2.jpeg";
 import AllStarGame from "../../images/AllStarGame.jpeg";
 import Mikal from "../../images/Mikal.jpeg";
 import Kyle from "../../images/Kyle.jpeg";
@@ -150,8 +150,7 @@ function NewsAndAnalysis() {
               Along with Tyler Herro and Eric Paschall, Kevin Porter Jr. has
               been one of the most pleasant surprises of the draft at pick 30.
               While he has tendencies to be a black hole on offense, Porter Jr.
-              is a volume scorer that could provide a nice spark off the bench
-              for the Celtics...
+              is a volume scorer...
             </p>
           </NavLink>
         </div>
@@ -175,14 +174,14 @@ function NewsAndAnalysis() {
               Trades
             </div>{" "}
             <h3 className="article-card-header">
-              Who Are Legitimate Title Contenders? Post Trade-Deadline Edition
+              Post-Trade Deadline Title Contenders
             </h3>
             <p className="article-preview">
               With the trade deadline finally behind us, we can finally stop
               playing out hypothetical scenarios and matching up potential teams
               with one another. I, for one, was sick of the "x team offered
-              garbage package for an all-star caliber player" type conversations
-              I was getting into...
+              garbage package for an all-star caliber player" type
+              conversations...
             </p>
           </NavLink>
         </div>
@@ -237,8 +236,8 @@ function NewsAndAnalysis() {
               Monte Morris is constantly atop the league in assist-to-turnover
               ratio (currently in first with a 5.5 ratio). He takes care of the
               ball and shoots three pointers at a 40% rate. Morris is the ideal
-              playmaker you want coming off the bench that literally never gets
-              talked about...
+              playmaker you want coming off the bench that literally never
+              gets...
             </p>
           </NavLink>
         </div>
@@ -263,8 +262,7 @@ function NewsAndAnalysis() {
               Garry Harris’ production has dipped the past two seasons to the
               point where one could debate if he should even be starting for the
               Nuggets. I personally used to view Denver as having a potential
-              big 3 in Jokic, Murray, and Harris because of how young and
-              talented they were, but..
+              big 3 in Jokic, Murray, and Harris because of how young...
             </p>
           </NavLink>
         </div>
