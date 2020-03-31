@@ -73,7 +73,7 @@
       }
     }
     .article-filter-btn:hover {
-      background-color: white;
+      background-color: #fbfbfb;
       color: black;
       cursor: pointer;
       box-shadow: 2px 2px 5px gray;
@@ -101,7 +101,7 @@
       margin-top: 30px;
       border-bottom: 1px solid gray;
       width: 28%;
-      height: 480px;
+      height: 500px;
       box-shadow: 1px 1px 5px black;
       display: flex;
       flex-direction: column;
@@ -115,12 +115,11 @@
       }
       @media (max-width: 612px) {
         width: 40%;
-        // height: 450px;
       }
 
       @media (max-width: 500px) {
         width: 90%;
-        height: 420px;
+        height: 450px;
       }
 
       .news-article-link {

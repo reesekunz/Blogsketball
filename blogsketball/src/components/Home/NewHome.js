@@ -4,7 +4,11 @@ import "./Home.scss";
 import { IoLogoInstagram, IoLogoFacebook, IoLogoTwitter } from "react-icons/io";
 // images
 import KobeChampionship from "../../images/KobeChampionship.jpeg";
-import Zion from "../../images/Zion.jpeg";
+import Zion from "../../images/Zion.jpg";
+import Dame from "../../images/Dame.jpg";
+import DBook from "../../images/DBook.jpg";
+import Jaylen from "../../images/Jaylen.jpg";
+
 import Baylor from "../../images/Baylor.jpeg";
 import CutNet from "../../images/CutNet.jpeg";
 import AllStarGame from "../../images/AllStarGame.jpeg";
@@ -13,7 +17,7 @@ import Kyle from "../../images/Kyle.jpeg";
 import NotPabloLogo from "../../images/NotPabloLogo.png";
 import Jay from "../../images/Jay.jpeg";
 
-import Carousel from "./Carousel";
+// import Carousel from "./Carousel";
 import AGGrid from "../Betting/AGGrid";
 import Layout from "../../helpers/Layout";
 
@@ -278,10 +282,10 @@ function NewHome() {
       </div>
 
       {/* Nba Rank Section Section */}
-      <div className="nba-rank-container">
+      {/* <div className="nba-rank-container">
         <h3 className="section-header">2019-20 NBA Rank: 1-100</h3>
         <Carousel />
-      </div>
+      </div> */}
       {/* News and Analysis Section */}
       <div className="section-header-container">
         <h3 className="section-header">News and Analysis</h3>
@@ -350,8 +354,38 @@ function NewHome() {
           </div>
         </div>
         <div className="col3">
-          <div className="top">Top Section</div>
-          <div className="bottom">Bottom Section</div>
+          <div className="top">
+            {" "}
+            <img
+              className="secondary-article-img"
+              src={CutNet}
+              alt="Cutting down the nets"
+            />
+            <div className="date-written">FEB. 14</div>
+            <NavLink
+              to="/kenpom-analysis"
+              activeClassName="activeNavButton"
+              className="home-article-link"
+            >
+              <h3 className="secondary-article-header">
+                Using KenPom to Find Potential National Champions
+              </h3>
+            </NavLink>
+          </div>
+          <div className="bottom">
+            {" "}
+            <img className="secondary-article-img" src={Jay} alt="Jay Wright" />
+            <div className="date-written">FEB. 20</div>
+            <NavLink
+              to="/top-10-college-coaches"
+              activeClassName="activeNavButton"
+              className="home-article-link"
+            >
+              <h3 className="secondary-article-header">
+                Ranking the Top-10 Coaches in Men's College Basketball
+              </h3>
+            </NavLink>
+          </div>
         </div>
       </div>
       {/* Fantasy Section  */}
@@ -442,7 +476,7 @@ function NewHome() {
         </div>
       </div>
       {/* Game Breakdowns Section  */}
-      <div className="game-breakdowns-container">
+      {/* <div className="game-breakdowns-container">
         <div className="section-header-container">
           <h3 className="section-header">Game Breakdowns</h3>
           <NavLink
@@ -533,7 +567,7 @@ function NewHome() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* College Bball Section */}
       <div className="section-header-container">
         <h3 className="section-header">Men's College Basketball</h3>
@@ -602,8 +636,38 @@ function NewHome() {
           </div>
         </div>
         <div className="col3">
-          <div className="top">Top Section</div>
-          <div className="bottom">Bottom Section</div>
+          <div className="top">
+            {" "}
+            <img
+              className="secondary-article-img"
+              src={CutNet}
+              alt="Cutting down the nets"
+            />
+            <div className="date-written">FEB. 14</div>
+            <NavLink
+              to="/kenpom-analysis"
+              activeClassName="activeNavButton"
+              className="home-article-link"
+            >
+              <h3 className="secondary-article-header">
+                Using KenPom to Find Potential National Champions
+              </h3>
+            </NavLink>
+          </div>
+          <div className="bottom">
+            {" "}
+            <img className="secondary-article-img" src={Jay} alt="Jay Wright" />
+            <div className="date-written">FEB. 20</div>
+            <NavLink
+              to="/top-10-college-coaches"
+              activeClassName="activeNavButton"
+              className="home-article-link"
+            >
+              <h3 className="secondary-article-header">
+                Ranking the Top-10 Coaches in Men's College Basketball
+              </h3>
+            </NavLink>
+          </div>
         </div>
       </div>
       {/* NBA Draft Section  */}
@@ -698,7 +762,7 @@ function NewHome() {
         <div className="section-header-container">
           <h3 className="section-header">Player Spotlights </h3>
           <NavLink
-            to="/mens-ncaa"
+            to="/player-spotlights"
             activeClassName="activeNavButton"
             className="view-all-link"
           >
@@ -706,36 +770,131 @@ function NewHome() {
           </NavLink>
         </div>
         <div className="row">
+          {/* Dame Dolla  */}
           <div className="player">
             <div className="player-img-container">
-              <img className="player-img" src={Zion} alt="zion" />
+              <NavLink
+                to="/player-spotlights/1/info"
+                activeClassName="activeNavButton"
+                className="home-article-link"
+              >
+                <img className="player-img" src={Dame} alt="Dame" />
+              </NavLink>
             </div>
-            <h5 className="player-name">Zion Williamson</h5>
-            <p className="player-info">New Orleans Pelicans</p>
+            <NavLink
+              to="/player-spotlights/1/info"
+              activeClassName="activeNavButton"
+              className="home-article-link"
+            >
+              <h5 className="player-name">Damian Lillard</h5>
+            </NavLink>
+
+            <p className="player-info">Portland Trail Blazers</p>
+          </div>
+          {/* Devin Booker */}
+          <div className="player">
+            <div className="player-img-container">
+              <NavLink
+                to="/player-spotlights/3/info"
+                activeClassName="activeNavButton"
+                className="home-article-link"
+              >
+                <img className="player-img" src={DBook} alt="Devin Booker" />
+              </NavLink>
+            </div>
+            <NavLink
+              to="/player-spotlights/3/info"
+              activeClassName="activeNavButton"
+              className="home-article-link"
+            >
+              <h5 className="player-name">Devin Booker</h5>
+            </NavLink>
+            <p className="player-info">Phoenix Suns</p>
           </div>
           <div className="player">
             <div className="player-img-container">
-              <img className="player-img" src={Zion} alt="zion" />
+              <NavLink
+                to="/player-spotlights/5/info"
+                activeClassName="activeNavButton"
+                className="home-article-link"
+              >
+                <img className="player-img" src={Jaylen} alt="Jaylen" />
+              </NavLink>
             </div>
-            <h5 className="player-name">Zion Williamson</h5>
-            <p className="player-info">New Orleans Pelicans</p>
+            <NavLink
+              to="/player-spotlights/5/info"
+              activeClassName="activeNavButton"
+              className="home-article-link"
+            >
+              <h5 className="player-name">Jaylen Brown</h5>
+            </NavLink>
+
+            <p className="player-info"> Boston Celtics</p>
           </div>
           <div className="player">
             <div className="player-img-container">
-              <img className="player-img" src={Zion} alt="zion" />
+              <NavLink
+                to="/player-spotlights/10/info"
+                activeClassName="activeNavButton"
+                className="home-article-link"
+              >
+                <img className="player-img" src={Zion} alt="zion" />
+              </NavLink>
             </div>
-            <h5 className="player-name">Zion Williamson</h5>
-            <p className="player-info"> New Orleans Pelicans</p>
-          </div>
-          <div className="player">
-            <div className="player-img-container">
-              <img className="player-img" src={Zion} alt="zion" />
-            </div>
-            <h5 className="player-name">Zion Williamson</h5>
+            <NavLink
+              to="/player-spotlights/10/info"
+              activeClassName="activeNavButton"
+              className="home-article-link"
+            >
+              <h5 className="player-name">Zion Williamson</h5>
+            </NavLink>
+
             <p className="player-info">New Orleans Pelicans</p>
           </div>
         </div>
+        <div className="follow-us-mobile-container">
+        <h4 className="latest-articles-header">Follow Us</h4>
+          <div className="icons">
+            <div className="icon">
+              <IoLogoInstagram
+                size={30}
+                color="#222222"
+                className="social-media-icon"
+              />{" "}
+              Instagram
+            </div>
+            <div className="icon">
+              <IoLogoFacebook
+                size={30}
+                color="#3b5998 "
+                className="social-media-icon"
+              />{" "}
+              Facebook
+            </div>
+            <div className="icon">
+              <IoLogoTwitter
+                size={30}
+                color="#1da1f2"
+                className="social-media-icon"
+              />{" "}
+              Twitter
+            </div>
+          </div>
+          <h4 className="latest-articles-header">Our Other Sites</h4>
+          <a
+            className="other-sites"
+            href="https://notpablo.com"
+            target="_blank"
+          >
+            <img
+              className="other-sites-img"
+              src={NotPabloLogo}
+              alt="Not Pablo Logo"
+            />
+          </a>
+        </div>
       </div>
+      
     </div>
   );
 }

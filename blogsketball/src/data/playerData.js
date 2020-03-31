@@ -10,17 +10,7 @@ import RoCo from "../images/RoCo.jpg";
 import Warren from "../images/Warren.jpg";
 import Zion from "../images/Zion.jpg";
 
-// player page images (img)
-// import Dame2 from "../images/Dame2.jpeg";
-// import DLo2 from "../images/DLo2.jpeg";
-// import DBook2 from "../images/DBook2.jpeg";
-// import Giannis2 from "../images/Giannis2.jpeg";
-// import Jaylen2 from "../images/Jaylen2.jpeg";
-// import Jokic2 from "../images/Jokic2.jpeg";
-// import RJ2 from "../images/RJ2.jpeg";
-// import RoCo2 from "../images/RoCo2.jpeg";
-// import TJ2 from "../images/TJ2.jpeg";
-// import Zion2 from "../images/Zion2.jpeg";
+
 
 export default [
   // Damian Lillard

@@ -10,6 +10,11 @@ function Fantasy() {
   return (
     <div className="fantasy-container">
       <h2 className="header">Fantasy Basketball</h2>
+      <nav className="fantasy-nav-bar">
+        <a href="#">Rankings</a>
+        <a href="#">Beginner's Guide</a>
+        <a href="#">Latest</a>
+      </nav>
 
       <div className="col-container">
         <div className="col1">
